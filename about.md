@@ -3,10 +3,12 @@ title: About Me
 ---
 
 # Professional Background
-IT professional focused on cybersecurity with expertise in enterprise support and security operations.
+IT security professional with experience in enterprise environments, focusing on security operations and infrastructure protection. Currently supporting and securing systems in highly regulated financial services.
+
+
 
 ## Current Projects
-🚀 [Homelab](index.md) - Documenting my journey in building and maintaining a home lab environment for cybersecurity testing and learning.
+🚀 [Homelab](index.md) - Building and maintaining a comprehensive security testing environment for hands-on cybersecurity practice and continuous learning.
 
 ## 🎓 Education
 - B.S. in Information Systems
@@ -15,11 +17,11 @@ IT professional focused on cybersecurity with expertise in enterprise support an
 ## 💼 Professional Experience
 ### IT Support Associate
 Fidelity Investments | December 2020 - Present
-- Ensure security compliance while providing technical support for internal associates
-- Monitor and respond to potential security incidents including phishing attempts and suspicious activities
-- Maintain and troubleshoot access control policies for enterprise systems and applications
-- Troubleshoot VPN, network connectivity, and authentication issues
-- Experience with Active Directory user management and security policies
+- Support and secure a 70,000-user enterprise environment in the financial services sector
+- Administer enterprise security platforms including identity management, privileged access, and mainframe security tools
+- Handle security assessments and compliance requirements with consistently high performance metrics
+- Create technical documentation for security issues and develop mitigation strategies
+- Train new team members on security practices and compliance requirements in a regulated environment
 
 ## 📚 Certifications & Training
 - Active pursuit of [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
@@ -28,6 +30,7 @@ Fidelity Investments | December 2020 - Present
 - Security Operations Center (SOC) operations
 - Threat detection and incident response
 - Network security architecture
+- Industrial security and critical infrastructure protection
 - Active Directory security
 
 ## 🤝 Connect
