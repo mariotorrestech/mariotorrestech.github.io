@@ -8,6 +8,7 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 [About Me / Professional Background](about.md)
 
 ## 📋 Executive Summary
+A dedicated homelab environment built for hands-on learning in cybersecurity, with a current focus on [PNPT (Practical Network Penetration Tester) certification](https://certifications.tcm-sec.com/pnpt/). This environment serves as both a practical learning platform and a foundation for developing real-world security testing experience.
 
 ## 🎯 Current Learning Focus
 ### Certification Preparation
@@ -19,6 +20,7 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 ### Skill Development
 - Security testing fundamentals
 - Network security concepts
+- Infrastructure automation basics
 
 ## 🔬 Security Labs & Testing Environments
 
@@ -45,6 +47,9 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 <img src="/images/homelab-diagram.svg" style="width: 500px; max-width: 100%;" alt="Homelab Infrastructure Diagram">
 
 ### Security Design
+- Isolated internal network - no external exposure
+- Network segmentation for service isolation
+- Internal PKI using Step-CA signed certificates
 
 
 ### Network Segmentation
@@ -58,6 +63,7 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 ## 🖥️ Infrastructure Overview
 ### Core Platform
 - **Primary Server**: Intel NUC8 Hades Canyon
+  - Intel i7-8709G with Radeon Graphics
   - 64GB RAM
   - Storage: 250GB SSD (OS) + 1TB SSD (VMs)
 - **Hypervisor**: Proxmox VE 8.0
@@ -66,13 +72,29 @@ A learning-focused environment for developing cybersecurity and infrastructure s
   - Resource management
 
 ### Core Services
+- Infrastructure:
+  - Pi-hole DNS and ad blocking
+  - Step-CA certificate authority
+  - Nginx Proxy Manager
+- Containerized Services:
+  - Docker deployments
+  - Container security practice
 
 ## 🛠️ Tools & Technologies
 ### Primary Tools
+- Proxmox VE
+- Docker
+- Kali Linux
+- Common security testing tools
+- Network analysis tools
 
 ### Development Tools
+- Bash scripting
+- Infrastructure automation
+- Service configuration
 
 ---
+<<<<<<< HEAD:site/docs/index.md
 *Last Updated: February 2025*  
 [About Mario Torres](about.md)
 =======
