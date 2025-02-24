@@ -8,7 +8,7 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 [About Me / Professional Background](about.md)
 
 ## 📋 Executive Summary
-A dedicated homelab environment built for hands-on learning in cybersecurity, with a current focus on [PNPT (Practical Network Penetration Tester) certification](https://certifications.tcm-sec.com/pnpt/). This environment serves as both a practical learning platform and a foundation for developing real-world security testing experience.
+A purpose-built security lab environment where I develop and test cybersecurity skills, with current focus on penetration testing and security infrastructure. This lab serves as both my learning platform and a practical environment for real-world security scenarios.
 
 ## 🎯 Current Learning Focus
 ### Certification Preparation
@@ -20,7 +20,7 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 ### Skill Development
 - Security testing fundamentals
 - Network security concepts
-- Infrastructure automation basics
+- Infrastructure security and system hardening 
 
 ## 🔬 Security Labs & Testing Environments
 
@@ -47,9 +47,9 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 <img src="/images/homelab-diagram.svg" style="width: 500px; max-width: 100%;" alt="Homelab Infrastructure Diagram">
 
 ### Security Design
-- Isolated internal network - no external exposure
-- Network segmentation for service isolation
-- Internal PKI using Step-CA signed certificates
+- Strictly isolated internal network - no external exposure
+- Defense-in-depth network segmentation for critical service protection
+- Internal PKI using Step-CA for secure certificate management and authentication 
 
 
 ### Network Segmentation
@@ -63,7 +63,7 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 ## 🖥️ Infrastructure Overview
 ### Core Platform
 - **Primary Server**: Intel NUC8 Hades Canyon
-  - Intel i7-8709G with Radeon Graphics
+  - Intel i7 with Radeon Graphics
   - 64GB RAM
   - Storage: 250GB SSD (OS) + 1TB SSD (VMs)
 - **Hypervisor**: Proxmox VE 8.0
@@ -72,32 +72,27 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
   - Resource management
 
 ### Core Services
-- Infrastructure:
-  - Pi-hole DNS and ad blocking
-  - Step-CA certificate authority
-  - Nginx Proxy Manager
-- Containerized Services:
-  - Docker deployments
-  - Container security practice
+- Security Infrastructure:
+  - DNS security and filtering with Pi-hole
+  - Certificate management through Step-CA
+  - Secure proxy services with NGINX
+- Containerized Environment:
+  - Secured Docker deployments
+  - Container isolation practices
 
 ## 🛠️ Tools & Technologies
 ### Primary Tools
-- Proxmox VE
-- Docker
-- Kali Linux
-- Common security testing tools
-- Network analysis tools
+- Proxmox VE for virtualization
+- Docker container platform
+- Kali Linux for penetration testing suite
+- Security tools (Burp Suite, Metasploit, Nmap)
+- Network analysis tools and monitoring tools
 
 ### Development Tools
-- Bash scripting
-- Infrastructure automation
-- Service configuration
+- Bash scripting for security tool automation
+- System hardening configurations
+- Service deployment and security configurations (NGINX, Docker, PKI)
 
 ---
-<<<<<<< HEAD:site/docs/index.md
 *Last Updated: February 2025*  
 [About Mario Torres](about.md)
-=======
-*Last Updated: November 2024*  
-[About Mario Torres](about.md)
->>>>>>> parent of 814e61a (Info update):index.md
