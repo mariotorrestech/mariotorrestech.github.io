@@ -3,7 +3,8 @@ site_url: https://mariotorrestech.github.io
 site_author: Mario Torres
 
 theme:
-  name: cinder
+  name: null
+  custom_dir: cinder
 
 nav:  
   - Home: index.md
