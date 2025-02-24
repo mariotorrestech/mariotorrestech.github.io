@@ -8,7 +8,6 @@ A learning-focused environment for developing cybersecurity and infrastructure s
 [About Me / Professional Background](about.md)
 
 ## 📋 Executive Summary
-A purpose-built security lab environment where I develop and test cybersecurity skills, with current focus on penetration testing and security infrastructure. This lab serves as both my learning platform and a practical environment for real-world security scenarios.
 
 ## 🎯 Current Learning Focus
 ### Certification Preparation
@@ -20,7 +19,6 @@ A purpose-built security lab environment where I develop and test cybersecurity 
 ### Skill Development
 - Security testing fundamentals
 - Network security concepts
-- Infrastructure security and system hardening 
 
 ## 🔬 Security Labs & Testing Environments
 
@@ -47,9 +45,6 @@ A purpose-built security lab environment where I develop and test cybersecurity 
 <img src="/images/homelab-diagram.svg" style="width: 500px; max-width: 100%;" alt="Homelab Infrastructure Diagram">
 
 ### Security Design
-- Strictly isolated internal network - no external exposure
-- Defense-in-depth network segmentation for critical service protection
-- Internal PKI using Step-CA for secure certificate management and authentication 
 
 
 ### Network Segmentation
@@ -63,7 +58,6 @@ A purpose-built security lab environment where I develop and test cybersecurity 
 ## 🖥️ Infrastructure Overview
 ### Core Platform
 - **Primary Server**: Intel NUC8 Hades Canyon
-  - Intel i7 with Radeon Graphics
   - 64GB RAM
   - Storage: 250GB SSD (OS) + 1TB SSD (VMs)
 - **Hypervisor**: Proxmox VE 8.0
@@ -72,27 +66,16 @@ A purpose-built security lab environment where I develop and test cybersecurity 
   - Resource management
 
 ### Core Services
-- Security Infrastructure:
-  - DNS security and filtering with Pi-hole
-  - Certificate management through Step-CA
-  - Secure proxy services with NGINX
-- Containerized Environment:
-  - Secured Docker deployments
-  - Container isolation practices
 
 ## 🛠️ Tools & Technologies
 ### Primary Tools
-- Proxmox VE for virtualization
-- Docker container platform
-- Kali Linux for penetration testing suite
-- Security tools (Burp Suite, Metasploit, Nmap)
-- Network analysis tools and monitoring tools
 
 ### Development Tools
-- Bash scripting for security tool automation
-- System hardening configurations
-- Service deployment and security configurations (NGINX, Docker, PKI)
 
 ---
 *Last Updated: February 2025*  
 [About Mario Torres](about.md)
+=======
+*Last Updated: November 2024*  
+[About Mario Torres](about.md)
+>>>>>>> parent of 814e61a (Info update):index.md
