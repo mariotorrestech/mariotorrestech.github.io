@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mariotorrestech.github.io/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/about/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/homelab/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/homelab/pnpt/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/infrastructure/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/infrastructure/ActiveDirectoryLab/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/infrastructure/WebAppLab/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+    <url>
+         <loc>https://mariotorrestech.github.io/infrastructure/network/</loc>
+         <lastmod>2025-05-24</lastmod>
+    </url>
+</urlset>
