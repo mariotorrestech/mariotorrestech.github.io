@@ -20,7 +20,7 @@ hide:
     4+ years supporting and administering IAM related issues at Fidelity Investments.
     
 
-    [:octicons-arrow-right-24: About Me](about/)
+    [:octicons-arrow-right-24: Profession and Education](about/)
 
 -   :material-abacus:{ .lg .middle } __Homelab & Certification__
 
