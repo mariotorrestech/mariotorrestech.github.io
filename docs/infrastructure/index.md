@@ -5,7 +5,7 @@ title: Infrastructure
 
 # Infrastructure Overview
 
-## Origins & Purpose
+## Origins & Use Case
 
 Originally built for multimedia services access (yt-dlp), evolved into a comprehensive security lab environment with core services:
 

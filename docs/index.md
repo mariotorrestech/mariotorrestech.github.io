@@ -5,17 +5,15 @@ hide:
   - navigation
 ---
 
----
+# **Mario Torres**
 
-# Mario Torres
-
-[IT professional supporting IAM solutions](about/) at Fidelity Investments. Also building practical cybersecurity skills through hands-on labs and certifications
+*[IT professional supporting IAM solutions](about/) at Fidelity Investments. Also building practical cybersecurity skills through hands-on labs and certifications*
 
 ## Quick Navigations
 
 <div class="grid cards" markdown>
 
--   :material-information-variant-box:{ .lg .middle } __About me__
+-   :material-information-variant-box:{ .lg .middle } __About Me__
 
     ---
 
@@ -24,15 +22,14 @@ hide:
 
     [:octicons-arrow-right-24: About Me](about/)
 
--   :material-abacus:{ .lg .middle } __Homelab Project & Certifications__
+-   :material-abacus:{ .lg .middle } __Homelab & Certification__
 
     ---
-
-    Cybersecurity learning platform built for PNPT labs and certification.
+   Details on my homelab services and cybersecurity training environments. PNPT course and certification currently in progress. 
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
--   :material-server-network:{ .lg .middle } __Network details and infrastructure__
+-   :material-server-network:{ .lg .middle } __Network Overview__
 
     ---
 
@@ -40,15 +37,12 @@ hide:
 
     [:octicons-arrow-right-24: More details](infrastructure/index.md)
 
--   :fontawesome-brands-windows:{ .lg .middle } __AD Lab environment__
+-   :fontawesome-brands-windows:{ .lg .middle } __AD Lab Environment__
 
     ---
 
-    Vulnerable environment built for PNPT certification and penetration testing.
+    Vulnerable AD environment built for learning cybersecurity fundamentals with a hands-on approach.
 
     [:octicons-arrow-right-24: Active Directory Lab](infrastructure/ActiveDirectoryLab.md)
 
 </div>
-
----
-*Last Updated: May 2025*
