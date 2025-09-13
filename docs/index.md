@@ -22,27 +22,19 @@ hide:
 
     [:octicons-arrow-right-24: Profession and Education](about/)
 
--   :material-abacus:{ .lg .middle } __Homelab & Certification__
+-   :material-abacus:{ .lg .middle } __Homelab__
 
     ---
-   Details on my homelab services and cybersecurity training environments. PNPT course and certification currently in progress. 
+   Details on my homelab services and cybersecurity training environments. 
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
--   :material-server-network:{ .lg .middle } __Network Overview__
+-   :material-server-network:{ .lg .middle } __CISSP__
 
     ---
 
-    Technical infrastructure documentation and network details.
+    Studying for CISSP Certification and testing this year.
 
-    [:octicons-arrow-right-24: More details](infrastructure/index.md)
-
--   :fontawesome-brands-windows:{ .lg .middle } __AD Lab Environment__
-
-    ---
-
-    Vulnerable AD environment built for learning cybersecurity fundamentals with a hands-on approach.
-
-    [:octicons-arrow-right-24: Active Directory Lab](infrastructure/ActiveDirectoryLab.md)
+    [:octicons-arrow-right-24: More details](certifications/cissp.md)
 
 </div>

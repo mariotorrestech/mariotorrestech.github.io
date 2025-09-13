@@ -1,6 +1,6 @@
-# OWASP Juice Shop		
+# OWASP Juice Shop
 
-The PNPT Course/Certification involves training on OWASP's [Juice Shop](https://owasp.org/www-project-juice-shop/) - and *insecure* web app used for training.
+The PNPT Course/Certification involves training on OWASP's [Juice Shop](https://owasp.org/www-project-juice-shop/) - and _insecure_ web app used for training.
 
 !!! note "Overview"
 
@@ -15,15 +15,14 @@ The PNPT Course/Certification involves training on OWASP's [Juice Shop](https://
     * XXE
     * IDOR
 
-=== "Tools used included:" 
+=== "Tools used included:"
 
     * Burp Suite
     * Netcat
     * Sqlmap
 
-
 ---
 
-*Return to [Home](../index.md)*  
-*Return to [Infrastructure](index.md)*  
-*Return to [Homelab](../homelab/index.md)*
+_Return to [Home](../index.md)_
+
+_Return to [Homelab](../homelab/index.md)_
