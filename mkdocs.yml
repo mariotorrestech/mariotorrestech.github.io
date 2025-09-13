@@ -6,11 +6,15 @@ site_dir: site
 
 nav:
   - Home: index.md
-  - About: about.md
+  - About Me: about.md
+  - Certfications:
+    - CISSP Certification: certifications/cissp.md
+    
   - Homelab:
-      - Overview: homelab/index.md
-      - PNPT: homelab/pnpt.md
-  - Infrastructure: infrastructure/index.md
+      - Homelab Overview: homelab/index.md
+      - Homelab Network: homelab/network.md
+      - AD Lab: homelab/activedirectory.md
+      - Web App Lab: homelab/webapplab.md
 
 theme:
   name: material

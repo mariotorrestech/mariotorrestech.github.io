@@ -1,31 +1,35 @@
 ---
 title: Security Homelab
-
 ---
 
 # Security Learning Environment & Homelab
 
-A learning-focused environment for developing cybersecurity and infrastructure skills
+## Infrastructure Overview
 
-## Executive Summary
+My lab is built on an Intel NUC8 Hades Canyon running Proxmox VE 8.2.2, providing a compact yet powerful platform for hosting both infrastructure services and security testing environments.
 
-A purpose-built security lab environment where I develop and test cybersecurity skills, with current focus on penetration testing and security infrastructure. This lab serves as both my learning platform and a practical environment for real-world security scenarios.
+### Tools & Technologies
 
-## Current Learning Focus
+- Virtualization: Proxmox VE
+- Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
+- Network Security: Pi-hole, NGINX, Step-CA
+- Containerization: Docker
 
-- [PNPT certification](pnpt.md) preparation
-- Active Directory attack methodologies
-- Web application security testing
-- Infrastructure security and system hardening
+### Current Learning Focus
 
-## Security Labs & Testing Environments
+- [CISSP certification](../certifications/cissp.md) domain topics to provide hands-on experience.
+- [Active Directory](activedirectory.md) penetration techniques and methodologies
+- [Web application security](webapplab.md) testing by way of OWASP Juice Shop
+- Hands-on experience with baremetal hypervisor (Proxmox) and provisioning of interna/services
 
-### [Active Directory Lab](../infrastructure/ActiveDirectoryLab.md)
+### Security Labs & Testing Environments
+
+#### [Active Directory Lab](homelab/activedirectory.md)
 
 - Purpose: Hands-on experience with vulnerable Windows domain controller and machines
-- AD attack and defense scenarios in guideline with TCM's PNPT course/labs
+- AD attack and defense scenarios in guideline with TCM's course/labs
 
-### [Web Application Security Lab](../infrastructure/WebAppLab.md)
+#### [Web Application Security Lab](homelab/webapplab.md)
 
 - OWASP Juice Shop with Burp Suite and FoxyProxy setup
 - Key vulnerability focus areas:
@@ -35,9 +39,9 @@ A purpose-built security lab environment where I develop and test cybersecurity 
   - Cross-Site Scripting (XSS) techniques
 - Emphasis on testing methodology and documentation
 
-## Environment Overview
+### Environment Overview
 
-### [Network Segmentation](../infrastructure/network.md)
+#### [Network Segmentation](../infrastructure/network.md)
 
 | Network     | Purpose          | Description                                       |
 | ----------- | ---------------- | ------------------------------------------------- |
@@ -45,18 +49,6 @@ A purpose-built security lab environment where I develop and test cybersecurity 
 | Admin       | Management       | Administrative access and management              |
 | Testing Lab | Security Testing | Isolated AD lab and security testing resources    |
 
-## Infrastructure Overview
-
-My lab is built on an Intel NUC8 Hades Canyon running Proxmox VE 8.2.2, providing a compact yet powerful platform for hosting both infrastructure services and security testing environments.
-
-## Tools & Technologies
-
-- Virtualization: Proxmox VE
-- Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
-- Network Security: Pi-hole, NGINX, Step-CA
-- Containerization: Docker
-
-
 ---
 
-*Return to [Home](../index.md)*
+_Return to [Home](../index.md)_
