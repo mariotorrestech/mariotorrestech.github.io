@@ -1,9 +1,7 @@
-# Security Assessment and Testing
-
-# domain6 content goes here
+# domain content goes here
 
 ## Sub content
 
 Lists
 
-[LINK](/docs/certifications/cissp.md) Links to redirect back to main CISSP page
+[LINK](../cissp.md) Links to redirect back to main CISSP page
