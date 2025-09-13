@@ -6,7 +6,7 @@ title: CISSP Certification
 
 ## Overview
 
-My studies are _invogorated_ through my workday, and the reverse is true. I find myself practicing what I'm learning and vice versa.
+I am currently reviewing and taking practice exams for the domains. My studies are invogorated through my workday, I find myself practicing what I'm learning and vice versa.
 
 I plan on testing for the CISSP exam later this year! I will be organizing my notes and filling in the below [placeholder] sections covering the various domains.
 
