@@ -6,9 +6,7 @@ Separate the virtualized testing environment and use Kali as the pivot point.
 
 !!! note "Overview"
 
-    Unifi UI makes this straightforward and configurable. 
-
-    .
+    Unifi UI makes this straightforward and configurable.
 
 ## Network Topology
 
