@@ -4,9 +4,9 @@ title: Security Homelab
 
 # Security Learning Environment & Homelab
 
-## Infrastructure Overview
+# Infrastructure Overview
 
-My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC. Born for gaming, now runs the lab.
+My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC - born for gaming, now runs the lab.
 
 ### Tools & Technologies
 
@@ -25,22 +25,45 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 
 - OWASP Juice Shop with Burp Suite and FoxyProxy setup
 - Key vulnerability focus areas:
-  - SQL Injection and authentication attacks
-  - Data exposure and XXE vulnerabilities
-  - Access control and security misconfigurations
-  - Cross-Site Scripting (XSS) techniques
+    - SQL Injection and authentication attacks
+    - Data exposure and XXE vulnerabilities
+    - Access control and security misconfigurations
+    - Cross-Site Scripting (XSS) techniques
 - Emphasis on testing methodology and documentation
-- Hands-on experience with baremetal hypervisor (Proxmox) and provisioning of interna/services
+- Hands-on experience with baremetal hypervisor (Proxmox) and provisioning of internal/services
 
-### Environment Overview
 
-#### [Network Segmentation](network.md)
+## Environment Overview
 
-| Network     | Purpose          | Description                                       |
-| ----------- | ---------------- | ------------------------------------------------- |
-| Production  | Core Services    | Infrastructure services (Pi-hole, Step-CA, Nginx) |
-| Admin       | Management       | Administrative access and management              |
-| Testing Lab | Security Testing | Isolated AD lab and security testing resources    |
+!!! note "some flashy context here"
+
+    Some text goes here that's for sure
+
+## Network Topology
+
+```mermaid
+graph TD
+    INTERNET((Internet)) --> ROUTER[UniFi Gateway]
+    ROUTER --> FW{Firewall Rules}
+    FW --> PROD[Production VLAN]
+    FW --> ADMIN[Admin VLAN]
+    FW --> LAB[Testing Lab VLAN]
+    
+    PROD --> CORE[Core Services]
+    ADMIN --> MGMT[Management Interface]
+    LAB --> ADLAB[AD Security Lab]
+    LAB --> WEBLAB[Web Security Lab]
+```
+
+## Network Segmentation
+
+| VLAN       | Purpose                      | Security Controls                                                                      |
+| ---------- | ---------------------------- | -------------------------------------------------------------------------------------- |
+| Production | Core infrastructure services | • Strict firewall rules<br>• Limited external access<br>• Service isolation            |
+| Admin      | Management access            | • Admin-only access<br>• Restricted to authorized devices<br>• Enhanced authentication |
+| Lab        | Security testing environment | • Completely isolated<br>• No internet access<br>• Sandboxed environment               |
+
+---
 
 ---
 
