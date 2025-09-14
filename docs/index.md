@@ -22,14 +22,14 @@ hide:
 
     [:octicons-arrow-right-24: Profession and Education](about/)
 
--   :material-abacus:{ .lg .middle } __Homelab__
+-   :material-server-network:{ .lg .middle } __Homelab__
 
     ---
    Details on my homelab services and cybersecurity training environments. 
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
--   :material-server-network:{ .lg .middle } __CISSP__
+-   :material-abacus:{ .lg .middle } __CISSP__
 
     ---
 
