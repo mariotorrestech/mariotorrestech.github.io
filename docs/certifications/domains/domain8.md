@@ -42,7 +42,7 @@ _Application Security. Needs to be involved during an application's entire life 
 - **Agile**
     - Divide the development process into multiple, rapid iterations of defining, developing, and deploying - with heavy customer interaction throughout the process
 - **Scaled Agile framework**
-  - A version of Agile that is designed to allow large organizations with may teams to collaborate and effectively deliver software
+    - A version of Agile that is designed to allow large organizations with may teams to collaborate and effectively deliver software
 - **Spiral Method**
     - A risk-driven development process that follows an iterative model - while also including elemnts of waterfall
     - The spiral model follows defined phases to completion and then repeats the process; this model resembles a sprial when mapped to paper
@@ -51,7 +51,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ###### Understand the different priorites of waterfall and agile methodologies
 
-- Agile appaers to be several waterfalls back to back, known as sprints
+- Agile appears to be several waterfalls back to back, known as sprints
 
 ###### Understand the role of a scrum master in agile devlopment
 
@@ -80,9 +80,9 @@ _Application Security. Needs to be involved during an application's entire life 
       - It indicates that an organization is driven by data, using it to measure performance improvement objectives. These objectives meet the needs of stakeholders and are predictable
   - Level 5: **Optimizing**
       - This phase is <u>flexible and stable.</u>
-      - The organization is focused on continually improving and it is able to pivot when change and opportunity present themselves. the stability of the organization allows it to innovate and be agile
+      - The organization is focused on continually improving and it is able to pivot when change and opportunity present themselves. The stability of the organization allows it to innovate and be agile
 
-- Each level of maturity of the CMMI is defind by certain characteristics
+- Each level of maturity of the CMMI is defined by certain characteristics
 
 ###### SAMM
 
