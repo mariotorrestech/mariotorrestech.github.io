@@ -40,7 +40,7 @@ _Application Security. Needs to be involved during an application's entire life 
     - A logical programming approach that is said to be foundational to OOP
     - Structured programming places heavy emphasis on structured control flow and aims to improve clarity, quality, and development time
 - **Agile**
-    - ivide the development process into multiple, rapid iterations of defining, developing, and deploying - with heavy customer interaction throughout the process
+    - Divide the development process into multiple, rapid iterations of defining, developing, and deploying - with heavy customer interaction throughout the process
 - **Scaled Agile framework**
   - A version of Agile that is designed to allow large organizations with may teams to collaborate and effectively deliver software
 - **Spiral Method**
@@ -61,9 +61,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 - Like development methodologies, maturity models also help improve the development process
 
-- Capability Maturity Model Integration (CMMI)
-
-  is one of the most popular models and includes six levels of maturity
+- Capability Maturity Model Integration (CMMI) is one of the most popular models and includes six levels of maturity
 
   - Level 0: **Incomplete**
       - This phase is <u>unknown and ad hoc</u>
@@ -96,7 +94,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 #####Core Concepts:
 
-- an integrated product team is really a fancy term for DevOps: software development, operations, quality assurance (QA)
+- An integrated product team is really a fancy term for DevOps: software development, operations, quality assurance (QA)
 - Ideally, DevOps should include security as an integral part of the development process and be referred to as DevSecOps
 
 ### Canary Testing and Deployments
@@ -110,8 +108,6 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Software Development overview
 
-[skimmed] [skimmed] [skimmed]
-
 ### Code Obfuscation
 
 #####Core Concepts:
@@ -121,12 +117,12 @@ _Application Security. Needs to be involved during an application's entire life 
 - Three primary types of code obfuscation
 
   - **Lexical**
-    - modifies the look of the code (changing comments, removing debugging info, format of code)
+    - Modifies the look of the code (changing comments, removing debugging info, format of code)
     - Easiest but weakest form of obfuscation
   - **Data**
-    - modifies the data structure
+    - Modifies the data structure
   - **Control Flow**
-    - modifies the flow of control through the code (reordering statements, methods, loops, and creating irrelevant conditional statements
+    - Modifies the flow of control through the code (reordering statements, methods, loops, and creating irrelevant conditional statements
 
 ### DBMS, Concurrency, and Lock Controls
 
@@ -135,20 +131,20 @@ _Application Security. Needs to be involved during an application's entire life 
 - Components of DBS include: hardware, software, language (SQL), users, data
 - Database terms: cols/fields = attributes; records/rows = tuples
 - Foundation of a relational database is the concept of primary and foreign keys
-  - **primary keys:**
+  - **Primary keys:**
     - one ore more cols whos value uniquely identify a tuple (row) within a relational database
   - **Foreign keys:**
     - one or more cols whose values in a table refer to the primary key in another table
   - **Concurrency**
     - abiity for multiple processes to access or change shared data at the same time
-  - Locks prevent data corruption when multiple users try to write to the database simultaneously
-  - ACID: Atomicity, consistency, isolation, durability
+  - Locks prevent data corruption when multiple users try to Write to the database simultaneously
+  - ACID: Atomicity, Consistency, Isolation, Durability
 
 ### Metadata
 
 #####Core Concepts:
 
-- data about other data
+- Data about other data
 
 ### Development Ecosystems
 
@@ -164,7 +160,7 @@ _Application Security. Needs to be involved during an application's entire life 
 #####Core Concepts:
 
 - Software security effectiveness can be determined through auditing and logging of changes and risk analysis and mitigation, among other methods
-- review domain 6 for more details
+- Review domain 6 for more details
 
 ## Assess security impact of acquired software
 
@@ -175,11 +171,11 @@ _Application Security. Needs to be involved during an application's entire life 
 - Acquiring software should be taken as seriously as developing softwarwe, and security should be considered at every step in the process
 - Software assurance phases for acquisition including:
     - Planning/requirements
-    - contracting
-    - acceptance
+    - Contracting
+    - Acceptance
     - Monitoring
-    - etc
-- common ways to acquire software is via: Commercial-off-the-shelf (COTS), open source, third party, managed services
+    - Etc.
+- Common ways to acquire software is via: Commercial-off-the-shelf (COTS), open source, third party, managed services
 
 ## Define and apply secure coding guidelines and standards
 
@@ -215,11 +211,11 @@ _Application Security. Needs to be involved during an application's entire life 
 
 - Secure programming can help preven software vulnerabilities
 - Secure coding practices include:
-    - input validation
+    - Input validation
     - Authentication and password management, session management, among others
-    - coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
+    - Coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
     - Low coupling (meaning units of code can stand alone) and high cohesion (meaning the code that makes up a unit of code is highly related) are optimal
-    - Polyinstantiateion refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
+    - Polyinstantiation refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
 
 ### Software Development Vulnerabilities
 
@@ -231,4 +227,5 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ---
 
-[LINK](../cissp.md) Links to redirect back to main CISSP page
+
+[RETURN to CISSP home](../cissp.md)
