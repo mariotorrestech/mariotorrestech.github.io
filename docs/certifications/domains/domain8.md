@@ -34,20 +34,20 @@ _Application Security. Needs to be involved during an application's entire life 
 ###### Be familiar with various development methodologies and key characteristics of each:
 
 - **Waterfall**
-  - Complete each phase of devlopments before flowing/waterfalling into the next phase
-  - Does not allow a previous phase to be revisited
+    - Complete each phase of devlopments before flowing/waterfalling into the next phase
+    - Does not allow a previous phase to be revisited
 - **Structured Programming Development**
-  - A logical programming approach that is said to be foundational to OOP
-  - Structured programming places heavy emphasis on structured control flow and aims to improve clarity, quality, and development time
+    - A logical programming approach that is said to be foundational to OOP
+    - Structured programming places heavy emphasis on structured control flow and aims to improve clarity, quality, and development time
 - **Agile**
-  - ivide the development process into multiple, rapid iterations of defining, developing, and deploying - with heavy customer interaction throughout the process
+    - ivide the development process into multiple, rapid iterations of defining, developing, and deploying - with heavy customer interaction throughout the process
 - **Scaled Agile framework**
   - A version of Agile that is designed to allow large organizations with may teams to collaborate and effectively deliver software
 - **Spiral Method**
-  - A risk-driven development process that follows an iterative model - while also including elemnts of waterfall
-  - The spiral model follows defined phases to completion and then repeats the process; this model resembles a sprial when mapped to paper
+    - A risk-driven development process that follows an iterative model - while also including elemnts of waterfall
+    - The spiral model follows defined phases to completion and then repeats the process; this model resembles a sprial when mapped to paper
 - **Cleanroom**
-  - Development process intended to produce software with a certifiable level of reliability by focusing on defect prevention
+    - Development process intended to produce software with a certifiable level of reliability by focusing on defect prevention
 
 ###### Understand the different priorites of waterfall and agile methodologies
 
@@ -66,23 +66,23 @@ _Application Security. Needs to be involved during an application's entire life 
   is one of the most popular models and includes six levels of maturity
 
   - Level 0: **Incomplete**
-    - This phase is <u>unknown and ad hoc</u>
-    - Indicating that work may not be getting completed
+      - This phase is <u>unknown and ad hoc</u>
+      - Indicating that work may not be getting completed
   - Level 1: **Initial**
-    - this is a <u>reactive and unpredictable stage</u>
-    - Indicating that work is getting finished, but often coming in over budget and late
+      - this is a <u>reactive and unpredictable stage</u>
+      - Indicating that work is getting finished, but often coming in over budget and late
   - Level 2: **Managed**
-    - This stage indicates that projects are <u>managed and planned.</u>
-    - The tasks are performed, key metrics are taken, and the project is controlled
+      - This stage indicates that projects are <u>managed and planned.</u>
+      - The tasks are performed, key metrics are taken, and the project is controlled
   - Level 3: **Defined**
-    - In this phase, the organization is <u>being proactive as opposed to reactive.</u>
-    - There are standards across the organization that guide programs, portfolios, and projects
+      - In this phase, the organization is <u>being proactive as opposed to reactive.</u>
+      - There are standards across the organization that guide programs, portfolios, and projects
   - Level 4: **Qualitatively managed**
-    - This is a <u>controlled and measured stage.</u>
-    - It indicates that an organization is driven by data, using it to measure performance improvement objectives. These objectives meet the needs of stakeholders and are predictable
+      - This is a <u>controlled and measured stage.</u>
+      - It indicates that an organization is driven by data, using it to measure performance improvement objectives. These objectives meet the needs of stakeholders and are predictable
   - Level 5: **Optimizing**
-    - This phase is <u>flexible and stable.</u>
-    - The organization is focused on continually improving and it is able to pivot when change and opportunity present themselves. the stability of the organization allows it to innovate and be agile
+      - This phase is <u>flexible and stable.</u>
+      - The organization is focused on continually improving and it is able to pivot when change and opportunity present themselves. the stability of the organization allows it to innovate and be agile
 
 - Each level of maturity of the CMMI is defind by certain characteristics
 
@@ -174,11 +174,11 @@ _Application Security. Needs to be involved during an application's entire life 
 
 - Acquiring software should be taken as seriously as developing softwarwe, and security should be considered at every step in the process
 - Software assurance phases for acquisition including:
-  - Planning/requirements
-  - contracting
-  - acceptance
-  - Monitoring
-  - etc
+    - Planning/requirements
+    - contracting
+    - acceptance
+    - Monitoring
+    - etc
 - common ways to acquire software is via: Commercial-off-the-shelf (COTS), open source, third party, managed services
 
 ## Define and apply secure coding guidelines and standards
@@ -195,11 +195,11 @@ _Application Security. Needs to be involved during an application's entire life 
 - Buffer overflow is a common problem with applications and happens when information sent to a storage buffer exceeds the capacity of the buffer
 - Buffer overflow vulnerabilities can be exploited to elevated privileges or launch malicious code
 - **Address space layout randomization (ASLR)**
-  - One of the best ways to mitigate buffer overflows
-  - Randomizes the locations of where system executables are loaded into memory.
+    - One of the best ways to mitigate buffer overflows
+    - Randomizes the locations of where system executables are loaded into memory.
 
 - **Bounds checking:**
-  - Another way to protect against buffer overflows
+    - Another way to protect against buffer overflows
 
 ### Application Programming Interfaces (APIs)
 
@@ -215,11 +215,11 @@ _Application Security. Needs to be involved during an application's entire life 
 
 - Secure programming can help preven software vulnerabilities
 - Secure coding practices include:
-  - input validation
-  - Authentication and password management, session management, among others
-  - coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
-  - Low coupling (meaning units of code can stand alone) and high cohesion (meaning the code that makes up a unit of code is highly related) are optimal
-  - Polyinstantiateion refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
+    - input validation
+    - Authentication and password management, session management, among others
+    - coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
+    - Low coupling (meaning units of code can stand alone) and high cohesion (meaning the code that makes up a unit of code is highly related) are optimal
+    - Polyinstantiateion refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
 
 ### Software Development Vulnerabilities
 
@@ -228,7 +228,6 @@ _Application Security. Needs to be involved during an application's entire life 
 - Insecure coding practices and citizen developers writing code usually leads to software development vulnerabilities
 - Backdoor/trapdoor attacks often result from software vulnerabilities
 - Between-the-lines attack = attacker intercepts/modifies communication between devices/people over a network; also known as a man-in-the-middle attack
-
 
 ---
 
