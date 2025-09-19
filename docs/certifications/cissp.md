@@ -12,49 +12,49 @@ I plan on testing for the CISSP exam later this year! I will be organizing my no
 
 ## Domain 1 - Security and Risk Management
 
-- The [link](domains/domain1.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 2 - Asset Security
 
-- The [link](domains/domain2.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 3 - Security Engineering
 
-- The [link](domains/domain3.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 4 - Communication and Network Security
 
-- The [link](domains/domain4.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 5 - Identity and Access Management
 
-- The [link](domains/domain5.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 6 - Security Assessment and Testing
 
-- The [link](domains/domain6.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 7 - Security Operation
 
-- The [link](domains/domain7.md) link goes here with more information.
+- Link to notes coming soon. Please check other linked sections for now.
 
 ---
 
 ## Domain 8 - Software Development Security
 
-- The [link](domains/domain8.md) link goes here with more information.
+- [Notes sections](domains/domain8.md) for my latest notes on the domain.
 
 ---
 
