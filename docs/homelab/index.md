@@ -35,11 +35,7 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 
 ## Environment Overview
 
-!!! note "some flashy context here"
-
-    Some text goes here that's for sure
-
-## Network Topology
+### Network Topology
 
 ```mermaid
 graph TD
