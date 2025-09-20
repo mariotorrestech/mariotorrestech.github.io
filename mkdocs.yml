@@ -8,11 +8,12 @@ nav:
   - Home: index.md
   - About Me: about.md
   - Certfications:
-    - CISSP Certification: certifications/cissp.md
+    - CISSP Overview: certifications/cissp.md
+    - Domain 1: certifications/domain1.md
+
     
   - Homelab:
       - Homelab Overview: homelab/index.md
-      - Homelab Network: homelab/network.md
       - AD Lab: homelab/activedirectory.md
       - Web App Lab: homelab/webapplab.md
 
@@ -59,6 +60,8 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+
+  - pymdownx.blocks.caption
 
   - pymdownx.superfences
   - pymdownx.tabbed:

@@ -2,7 +2,7 @@
 title: CISSP Certification
 ---
 
-# [CISSP Certification](https://www.isc2.org/certifications/cissp)
+# CISSP Certification from ISC2 in progress now
 
 ## Overview
 
