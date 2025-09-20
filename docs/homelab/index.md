@@ -6,6 +6,8 @@ title: Security Homelab
 
 # Infrastructure Overview
 
+![image](../assets/nuc8.jpg)
+
 My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC - born for gaming, now runs the lab.
 
 ### Tools & Technologies
