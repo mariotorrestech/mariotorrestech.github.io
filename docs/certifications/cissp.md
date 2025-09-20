@@ -6,57 +6,18 @@ title: CISSP Certification
 
 ## Overview
 
-I am currently reviewing and taking practice exams for the domains. My studies are invogorated through my workday, I find myself practicing what I'm learning and vice versa.
+_I plan on testing for the CISSP exam later this year! My notes will be posted below as they are organized. I have reviewed Domains 1 - 8 and now working backwards to quiz through the sections._
 
-I plan on testing for the CISSP exam later this year! I will be organizing my notes and filling in the below [placeholder] sections covering the various domains.
-
-## Domain 1 - Security and Risk Management
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 2 - Asset Security
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 3 - Security Engineering
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 4 - Communication and Network Security
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 5 - Identity and Access Management
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 6 - Security Assessment and Testing
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 7 - Security Operation
-
-- Link to notes coming soon. Please check other linked sections for now.
-
----
-
-## Domain 8 - Software Development Security
-
-- [Notes sections](domains/domain8.md) for my latest notes on the domain.
-
----
+| Domain     | Section                            | Status                                                          |
+| ---------- | ---------------------------------- | --------------------------------------------------------------- |
+| `Domain 1` | Security and Risk Management       | :material-progress-pencil: Reviewing                            |
+| `Domain 2` | Asset Security                     | :material-progress-pencil: Quizzing...                          |
+| `Domain 3` | Security Engineering               | :material-progress-pencil: Notes to come                        |
+| `Domain 4` | Communication and Network Security | :material-progress-pencil: Notes to come                        |
+| `Domain 5` | Identity and Access Management     | :material-progress-pencil: Notes to come                        |
+| `Domain 6` | Security Asssement and Testing     | :material-progress-pencil: Notes to come                        |
+| `Domain 7` | Security Operation                 | :material-progress-pencil: Notes to come                        |
+| `Domain 8` | Software Development Security      | :material-progress-check: [Notes published](domains/domain8.md) |
 
 _Return to [Home](../index.md)_
 
