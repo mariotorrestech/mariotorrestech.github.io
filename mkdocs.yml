@@ -9,7 +9,7 @@ nav:
   - About Me: about.md
   - Certfications:
     - CISSP Overview: certifications/cissp.md
-    - Domain 1: certifications/domain1.md
+    - Domain 8 - Software Development Security: certifications/domains/domain8.md
 
     
   - Homelab:
