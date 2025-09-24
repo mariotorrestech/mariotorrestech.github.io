@@ -9,8 +9,8 @@ nav:
   - About Me: about.md
   - Certfications:
     - CISSP Overview: certifications/cissp.md
+    - Domain 2 - Asset Security: certifications/domains/domain2.md
     - Domain 8 - Software Development Security: certifications/domains/domain8.md
-
     
   - Homelab:
       - Homelab Overview: homelab/index.md
