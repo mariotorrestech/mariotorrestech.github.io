@@ -1,7 +1,297 @@
-# domain content goes here
+# Domain 2
 
-## Sub content
+# Asset Security
 
-Lists
+**Overview**:
 
-[LINK](../cissp.md) Links to redirect back to main CISSP page
+_Asset security includes the concepts, structures, principles, and controls aimed at protecting assets - anything that represenets value to the organization._
+
+_Domain 2 gives an overview of the steps involved in asset security to address some of the issues that security professionals often encounter while implementing them._
+
+---
+
+## Identify and classify information and assets
+
+### Asset Classification
+
+#####Core Concepts:
+
+- Asset classification policies, procedures, and processes help achieve proper protection of assets
+
+###### Classification is driven by the value of the asset
+
+Proper assete clasification ensures that assets receive an appropriate level of protection based on the value that they represent to the organization.
+
+Asset Classification: _Assigning assets the level of protection they require, based on their value to the organizaion_
+
+#### Information Classification Benefits
+
+- Identification of **critical** information
+    - identifies information that the organization considers critical to business success
+- Identification of **sensitivity** to modification
+    - classificaition helps identify data that must only be modified in specific authorized ways
+- Commitment to **protect** valuable assets
+    - creates awareness among users that the organization is commited to protecting assets from unauthorized access
+- Commitment to **confidentiality** (where applicable)
+    - classification helps ensure that sensitive information remains confidential
+
+### Classification Process
+
+#####Core Concepts:
+
+- Asset classification begins with a detailed asset inventory
+- Asset owners determine the classification assigned to an asset
+- Asset classification is an ongoing process
+
+Data classification ensures that data receive an appropriate level of protection. This is an ongoing process as data importance may change from one year to another.
+
+###### Asset classification steps
+
+
+### Classification vs Categorization
+
+#####Core Concepts:
+
+- Classification refres to a system of classes, ordered according to value
+    - IE, Top secret, secret, sensitive, restricted, proprietary, trade secret, PII, etc
+- Categorization refers to the act of sorting assests into defined classes
+- Ideally, all assets should be categorized into a classification system to allow them to be protected based on value
+
+## Labeling and Marking
+
+#####Core Concepts:
+
+- Labeling refers to the classification of the asset and is system-readable
+- Marking refers to the handling instructions of the asset and is human-readable
+- Should be consistently applied to all assets within an organization
+- Labeling should be cost-effective
+
+###### MAIN DIFFERENCES BETWEEN THE TWO
+
+Labeling results in output that is system-readable
+
+Marking extends the intent of labeling in a way that can clearly be understood and executed by humans
+
+| LABELING                                                                                                   | MARKING                                                                      |
+| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| System-readable                                                                                            | Human-readable                                                               |
+| Association of security attributes of **subjects and objects** represented in **internal data structures** | Association of security attributes with objects in a **human-readable form** |
+| Enables **system-based** enforcement                                                                       | Enables **process-based** enforcement                                        |
+
+Labeling is system-readable so it often employs one of the following
+
+- metadata, barcodes, QR codes, RFID, GPS tags
+
+###### Cost-effectiveness of different labeling approaches
+
+Depends on customer use case basically, duh
+
+## Establish information and asset handling requirements
+
+### Media Handling
+
+#####Core Concepts:
+
+- Handling requirements are based on the classification of the asset, not the type of media
+- Owners determine who may access media, especially sensitive meia
+
+###### Media Storage
+
+- Use encryption, use physically secure locations based on storage requirements and classificaiton of data.
+
+###### Media Retention and Destruction
+
+Based on organization data classification and data archiving policies.
+
+## Provision information assets securely
+
+### Data Classification Roles and Responsibilities
+
+- Owners are accountable
+- Assignment of ownership drives the data classification process
+- Data classification roles and responsibilities
+
+Identifying owners is an essential part of the classificaiton process since they are the ones accountable for the assets being protected. no owners = no accountability
+
+###### Owners are ultimately accountable for an asset and protecting its value
+
+The owner is:
+
+- The person who directly interacts with the asset the most. Intimacy makes them understand the asset's value best.
+- Even though IT may help manage the underlying systems related to the assets, they are only functioning as a custodian
+
+Owners need to have clearly defined **accountabilities**
+
+- Classificaiton and categorization of assets
+- Managing access to assets
+- Ensuring appropriate controls are in placed based on asset classification
+
+Owners can delegate **responsibility** for an asset, but they always remain **accountable**. Accountability cannot be delegated.
+
+- data owners, process owners, system owners, product owners, service owners, hardware owners, applications owners IP owners, etc
+
+Regardless of the type of owner, each holds the same accountability:
+
+- to understand the value of the assets to an organization and classify them properly and ensure appropriate protection as they progress through their life cycle
+
+###### Undestand different data roles and responsibilities
+
+- ##### Owner/Controller
+
+    - **Accountable** for protection of data; holds legal rights and defines policies
+- ##### Processor
+
+    - **Responsible for processing** data on behalf of the owner/controller. IE cloud provider
+- ##### Custodian
+
+    - **Technical responsibility** for data
+    - Network administration, database custody, security, availability, capacity, etc
+- ##### Steward
+
+    - **Business responsibility** for data (ex. metadata, quality, governance)
+- ##### Subject
+
+    - Individual to whom personal data pertains
+
+### Data Classification Policy
+
+#####Core Concepts:
+
+- Data classification policy is concerned with the management of inforamtion to ensure that sensitive and valuable information is protected and handled accordingly
+- Data classification policy considers laws, regulations, privacy requirements, customer requirements, cost of creation, operational impact, liability, and reputation
+
+## Manage data life cycle
+
+### Information Life Cycle
+
+- Information life cycle phases
+- Data must be protected at each phase
+
+#### Data lifecycle stages:
+
+- **Create**
+    - Generation of new digital content, or the alteration/updating/modifying of existing content
+
+- **Store**
+    - committing digital data to some sort of storage repo, which typically occurs nearly simultaneously with creation
+
+- **Use**
+    - data viewed, processed, or otherwise used in some sort of activity, not including modifying
+
+- **Share**
+    - Information made accessible to others, such as company users, customers, and partners
+
+- **Archive**
+    - Data leaves active use and enters long-term storage
+
+- **Destroy**
+    - Data is permanently destroyed using physical or digital means
+
+### Data Destruction
+
+######Core Concepts:
+
+- Data remanence refers to residual representation of information even after attempts to securely delete or remove the data
+- Categories of sanitization - destruction, purging, clearing
+- Secure removal of data in the cloud
+
+Most experts today consider any number of overwriting passes as being 'clearing' and not 'purging'
+
+**Physical destruction of media is best, but it may be too costly, unavailable, or otherwise infeasible**
+
+## Ensure appropriate asset retention
+
+### Data Archiving
+
+#####Core Concepts:
+
+- Data archiving is part of the asset life cycle
+- Data archiving includes requirements for archived data
+- Data archiving should be driven by an appropriate retention policy
+
+###### Data archiving policies
+
+- Archiving/retention policy are based on laws, regulations, industry standards, and business needs
+
+- Classify records accordingly
+- Educate employees and provide them with the right tools
+
+###### Questions to consider when writing a policy
+
+- who needs access to the data?
+- do access requirements change over time?
+- How long does data need to be kept?
+- what are the disposal requirements?
+
+## Determine data security controls and compliance requirements
+
+###### What is the best way to ensure data receives appropriate protection based on classification
+
+
+### Protecting Data at Rest
+
+#####Core Concepts:
+
+- Methods used to protect data at rest:
+    - Encryption
+    - Access control
+    - Backup
+    - Restoration
+
+### Protecting Data in Transit
+
+#####Core Concepts:
+
+- methods used to protect data in transit:
+    - E2E encryption
+    - Link Encryption
+      - decrypted at each link, unlike e2e
+
+    - onion network
+
+### Protecting Data in Use
+
+Refers to data that is being used in some type of computational activity
+
+One way to protect data in use is through: homomorphic encryption, which allows calcualations to be perfromed on data while the data remains encrypted
+
+Other ways include:
+
+- role based access control (RBAC)
+- Digital rights protections (DRP) or Data loss prevention (DLP)
+
+### Information Obfuscation Methods
+
+- Obfuscation makes something harder to understand
+- Obfuscation methods:
+
+    - **Concealing Data**
+      - unlike pruning, completely removes access to sensitive data. Users do not have access, nor do they have visibility and the attribute field does not appear on computer screens and reports
+
+    - **Information Pruning/Pruning Data**
+      - primarily takes place in non-prod environments and involves removal of sensitive data from attributes. The attribute will still be visible as a field on computer screens/reports but will not be populated with data
+
+    - **Fabricating Data**
+      - especially when testing functionality
+
+    - **Trimming data**
+      - Unlike pruning, removes part of an attribute's value and is typicalled used for purposed of identification. IE, SSNs where only the last 4 are visible
+
+    - **Encrypting data**
+      - Creates ciphertext of a value
+
+### Digital Rights Management (DRM)
+
+#####Core Concepts:
+
+- DRM protects IP assets and the rights of asset owners
+- DRM Techniques
+- Legal basis for protection in the US through the Digital Millennium Copyright Act (DMCA)
+
+### Data Loss Prevention (DLP)
+
+#####Core Concepts:
+
+- Data loss prevention focuses on the identification, monitoring, and protection of data
+- DLP data activites take place in three contexts: data in use, data in motion, data at rest
+- DLP takes place for multiple reasons
