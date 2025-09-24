@@ -11,7 +11,7 @@ _I plan on testing for the CISSP exam later this year! My notes will be posted b
 | Domain     | Section                            | Status                                                          |
 | ---------- | ---------------------------------- | --------------------------------------------------------------- |
 | `Domain 1` | Security and Risk Management       | :material-progress-pencil: Reviewing                            |
-| `Domain 2` | Asset Security                     | :material-progress-pencil: Quizzing...                          |
+| `Domain 2` | Software Development Security      | :material-progress-check: [Notes published](domains/domain2.md) |
 | `Domain 3` | Security Engineering               | :material-progress-pencil: Notes to come                        |
 | `Domain 4` | Communication and Network Security | :material-progress-pencil: Notes to come                        |
 | `Domain 5` | Identity and Access Management     | :material-progress-pencil: Notes to come                        |
