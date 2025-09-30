@@ -1,8 +1,8 @@
-# Domain 2
+#### Domain 2
 
 # Asset Security
 
-**Overview**:
+##### Overview:
 
 _Asset security includes the concepts, structures, principles, and controls aimed at protecting assets - anything that represenets value to the organization._
 
@@ -27,13 +27,13 @@ Asset Classification: _Assigning assets the level of protection they require, ba
 #### Information Classification Benefits
 
 - Identification of **critical** information
-    - identifies information that the organization considers critical to business success
+  - identifies information that the organization considers critical to business success
 - Identification of **sensitivity** to modification
-    - classificaition helps identify data that must only be modified in specific authorized ways
+  - classificaition helps identify data that must only be modified in specific authorized ways
 - Commitment to **protect** valuable assets
-    - creates awareness among users that the organization is commited to protecting assets from unauthorized access
+  - creates awareness among users that the organization is commited to protecting assets from unauthorized access
 - Commitment to **confidentiality** (where applicable)
-    - classification helps ensure that sensitive information remains confidential
+  - classification helps ensure that sensitive information remains confidential
 
 ### Classification Process
 
@@ -47,13 +47,12 @@ Data classification ensures that data receive an appropriate level of protection
 
 ###### Asset classification steps
 
-
 ### Classification vs Categorization
 
 #####Core Concepts:
 
 - Classification refres to a system of classes, ordered according to value
-    - IE, Top secret, secret, sensitive, restricted, proprietary, trade secret, PII, etc
+  - IE, Top secret, secret, sensitive, restricted, proprietary, trade secret, PII, etc
 - Categorization refers to the act of sorting assests into defined classes
 - Ideally, all assets should be categorized into a classification system to allow them to be protected based on value
 
@@ -84,7 +83,7 @@ Labeling is system-readable so it often employs one of the following
 
 ###### Cost-effectiveness of different labeling approaches
 
-Depends on customer use case basically, duh
+Depends on customer use case basically
 
 ## Establish information and asset handling requirements
 
@@ -138,20 +137,20 @@ Regardless of the type of owner, each holds the same accountability:
 
 - ##### Owner/Controller
 
-    - **Accountable** for protection of data; holds legal rights and defines policies
+  - **Accountable** for protection of data; holds legal rights and defines policies
 - ##### Processor
 
-    - **Responsible for processing** data on behalf of the owner/controller. IE cloud provider
+  - **Responsible for processing** data on behalf of the owner/controller. IE cloud provider
 - ##### Custodian
 
-    - **Technical responsibility** for data
-    - Network administration, database custody, security, availability, capacity, etc
+  - **Technical responsibility** for data
+  - Network administration, database custody, security, availability, capacity, etc
 - ##### Steward
 
-    - **Business responsibility** for data (ex. metadata, quality, governance)
+  - **Business responsibility** for data (ex. metadata, quality, governance)
 - ##### Subject
 
-    - Individual to whom personal data pertains
+  - Individual to whom personal data pertains
 
 ### Data Classification Policy
 
@@ -170,22 +169,22 @@ Regardless of the type of owner, each holds the same accountability:
 #### Data lifecycle stages:
 
 - **Create**
-    - Generation of new digital content, or the alteration/updating/modifying of existing content
+  - Generation of new digital content, or the alteration/updating/modifying of existing content
 
 - **Store**
-    - committing digital data to some sort of storage repo, which typically occurs nearly simultaneously with creation
+  - committing digital data to some sort of storage repo, which typically occurs nearly simultaneously with creation
 
 - **Use**
-    - data viewed, processed, or otherwise used in some sort of activity, not including modifying
+  - data viewed, processed, or otherwise used in some sort of activity, not including modifying
 
 - **Share**
-    - Information made accessible to others, such as company users, customers, and partners
+  - Information made accessible to others, such as company users, customers, and partners
 
 - **Archive**
-    - Data leaves active use and enters long-term storage
+  - Data leaves active use and enters long-term storage
 
 - **Destroy**
-    - Data is permanently destroyed using physical or digital means
+  - Data is permanently destroyed using physical or digital means
 
 ### Data Destruction
 
@@ -227,27 +226,26 @@ Most experts today consider any number of overwriting passes as being 'clearing'
 
 ###### What is the best way to ensure data receives appropriate protection based on classification
 
-
 ### Protecting Data at Rest
 
 #####Core Concepts:
 
 - Methods used to protect data at rest:
-    - Encryption
-    - Access control
-    - Backup
-    - Restoration
+  - Encryption
+  - Access control
+  - Backup
+  - Restoration
 
 ### Protecting Data in Transit
 
 #####Core Concepts:
 
 - methods used to protect data in transit:
-    - E2E encryption
-    - Link Encryption
-      - decrypted at each link, unlike e2e
+  - E2E encryption
+  - Link Encryption
+    - decrypted at each link, unlike e2e
 
-    - onion network
+  - onion network
 
 ### Protecting Data in Use
 
@@ -265,20 +263,20 @@ Other ways include:
 - Obfuscation makes something harder to understand
 - Obfuscation methods:
 
-    - **Concealing Data**
-      - unlike pruning, completely removes access to sensitive data. Users do not have access, nor do they have visibility and the attribute field does not appear on computer screens and reports
+  - **Concealing Data**
+    - unlike pruning, completely removes access to sensitive data. Users do not have access, nor do they have visibility and the attribute field does not appear on computer screens and reports
 
-    - **Information Pruning/Pruning Data**
-      - primarily takes place in non-prod environments and involves removal of sensitive data from attributes. The attribute will still be visible as a field on computer screens/reports but will not be populated with data
+  - **Information Pruning/Pruning Data**
+    - primarily takes place in non-prod environments and involves removal of sensitive data from attributes. The attribute will still be visible as a field on computer screens/reports but will not be populated with data
 
-    - **Fabricating Data**
-      - especially when testing functionality
+  - **Fabricating Data**
+    - especially when testing functionality
 
-    - **Trimming data**
-      - Unlike pruning, removes part of an attribute's value and is typicalled used for purposed of identification. IE, SSNs where only the last 4 are visible
+  - **Trimming data**
+    - Unlike pruning, removes part of an attribute's value and is typicalled used for purposed of identification. IE, SSNs where only the last 4 are visible
 
-    - **Encrypting data**
-      - Creates ciphertext of a value
+  - **Encrypting data**
+    - Creates ciphertext of a value
 
 ### Digital Rights Management (DRM)
 

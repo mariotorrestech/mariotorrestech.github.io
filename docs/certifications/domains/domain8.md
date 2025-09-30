@@ -1,6 +1,8 @@
-# Domain 8
+#### Domain 8
 
 # Software Development Security
+
+##### Overview:
 
 _Application Security. Needs to be involved during an application's entire life cycle, not just at development._
 
@@ -8,13 +10,13 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Security's Involvement in Development
 
-#####Core Concepts:
+######Core Concepts:
 
 - Security should be involved at every phase of the development life cycle
 
 ### SDLC and SLC
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Security should be considered at every phase of sdlc/SLC
 - Risk analysis and threat modeling are very important components of the eaerly phases of SDLC/SLC
@@ -23,7 +25,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Development Methodologies
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Development methodologies exist for the sake of efficient and effective code development
 - Many methodologies are a reflection of the waterfall methodology
@@ -92,14 +94,14 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### DevOps
 
-#####Core Concepts:
+#######Core Concepts:
 
 - An integrated product team is really a fancy term for DevOps: software development, operations, quality assurance (QA)
 - Ideally, DevOps should include security as an integral part of the development process and be referred to as DevSecOps
 
 ### Canary Testing and Deployments
 
-#####Core Concepts:
+#######Core Concepts:
 
 - **Canary** testing and deployments refer to hyperfocused testing of new application code/features by pushing out the changes to a small subset of users versus pushing out to all users
 - **Smoke** testing
@@ -110,7 +112,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Code Obfuscation
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Obfuscation refers to hiding or obscuring something; code obfuscation refers to hiding or obscuring code to protect it from unauthorized viewing or interpretation of the logic
 
@@ -126,7 +128,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### DBMS, Concurrency, and Lock Controls
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Components of DBS include: hardware, software, language (SQL), users, data
 - Database terms: cols/fields = attributes; records/rows = tuples
@@ -142,13 +144,13 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Metadata
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Data about other data
 
 ### Development Ecosystems
 
-#####Core Concepts:
+#######Core Concepts:
 
 - CI/CD, SOAR, and SCM are development ecosystems
 - Though the focus of each is different, they each share common characteristics
@@ -157,7 +159,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Software Security Assessment Methods
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Software security effectiveness can be determined through auditing and logging of changes and risk analysis and mitigation, among other methods
 - Review domain 6 for more details
@@ -166,7 +168,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Acquiring Software
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Acquiring software should be taken as seriously as developing softwarwe, and security should be considered at every step in the process
 - Software assurance phases for acquisition including:
@@ -186,7 +188,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Buffer Overflow
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Buffer overflow is a common problem with applications and happens when information sent to a storage buffer exceeds the capacity of the buffer
 - Buffer overflow vulnerabilities can be exploited to elevated privileges or launch malicious code
@@ -199,7 +201,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Application Programming Interfaces (APIs)
 
-#####Core Concepts:
+#######Core Concepts:
 
 - APIs provide a way for apps to communicate with each other; APIs act as translators
 - 2 of the most common APIs are Representational State Transfer (REST) and Simple Object Access Protocol (SOAP)
@@ -207,7 +209,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Secure Coding Practices
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Secure programming can help preven software vulnerabilities
 - Secure coding practices include:
@@ -219,7 +221,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Software Development Vulnerabilities
 
-#####Core Concepts:
+#######Core Concepts:
 
 - Insecure coding practices and citizen developers writing code usually leads to software development vulnerabilities
 - Backdoor/trapdoor attacks often result from software vulnerabilities
