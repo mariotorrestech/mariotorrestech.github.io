@@ -2,22 +2,22 @@
 title: CISSP Certification
 ---
 
-# CISSP Certification from ISC2 in progress now
+# CISSP Certification (in progress)
 
 ## Overview
 
-_I plan on testing for the CISSP exam later this year! My notes will be posted below as they are organized. I have reviewed Domains 1 - 8 and now working backwards to quiz through the sections._
+_I plan on testing for the CISSP [(ISC2)](https://www.isc2.org/certifications/cissp) exam later this year! My notes are posted below._
 
-| Domain     | Section                            | Status                                                          |
-| ---------- | ---------------------------------- | --------------------------------------------------------------- |
-| `Domain 1` | Security and Risk Management       | :material-progress-pencil: Reviewing                            |
-| `Domain 2` | Software Development Security      | :material-progress-check: [Notes published](domains/domain2.md) |
-| `Domain 3` | Security Engineering               | :material-progress-pencil: Notes to come                        |
-| `Domain 4` | Communication and Network Security | :material-progress-pencil: Notes to come                        |
-| `Domain 5` | Identity and Access Management     | :material-progress-pencil: Notes to come                        |
-| `Domain 6` | Security Asssement and Testing     | :material-progress-pencil: Notes to come                        |
-| `Domain 7` | Security Operation                 | :material-progress-pencil: Notes to come                        |
-| `Domain 8` | Software Development Security      | :material-progress-check: [Notes published](domains/domain8.md) |
+| Domain     | Section                            | Status                                                           |
+| ---------- | ---------------------------------- | ---------------------------------------------------------------- |
+| `Domain 1` | Security and Risk Management       | :material-progress-pencil: [Notes published](domains/domain1.md) |
+| `Domain 2` | Software Development Security      | :material-progress-pencil: [Notes published](domains/domain2.md) |
+| `Domain 3` | Security Engineering               | :material-progress-pencil: [Notes published](domains/domain3.md) |
+| `Domain 4` | Communication and Network Security | :material-progress-pencil: [Notes published](domains/domain4.md) |
+| `Domain 5` | Identity and Access Management     | :material-progress-pencil: [Notes published](domains/domain5.md) |
+| `Domain 6` | Security Asssement and Testing     | :material-progress-pencil: [Notes published](domains/domain6.md) |
+| `Domain 7` | Security Operation                 | :material-progress-pencil: [Notes published](domains/domain7.md) |
+| `Domain 8` | Software Development Security      | :material-progress-pencil: [Notes published](domains/domain8.md) |
 
 _Return to [Home](../index.md)_
 
