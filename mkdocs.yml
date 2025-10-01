@@ -20,6 +20,7 @@ nav:
     
   - Homelab:
       - Homelab Overview: homelab/index.md
+      - Step-ca PKI: homelab/step-ca.md
       - AD Lab: homelab/activedirectory.md
       - Web App Lab: homelab/webapplab.md
 
