@@ -1,93 +1,75 @@
-# Nginx Proxy Manager (Reverse Proxy)
+# Pi-hole (DNS & Ad Blocking)
 
 !!! abstract "BLUF"
-    **What I built:** A central reverse proxy (Nginx Proxy Manager) to front-end all homelab services over HTTPS.  
-    **Why it mattered:** Consolidates ingress, simplifies routing by hostname, and terminates TLS in one place using certificates from my Step-CA.  
-    **Outcome:** Clean `https://<service>.lab` access for all apps, with consistent security policies and a single pane for certificate and proxy management.
+    **What I built:** A Pi-hole LXC container on Proxmox to provide DNS resolution and network-wide ad blocking.  
+    **Why it mattered:** Centralized DNS lets me map `.lab` domains to Nginx Proxy Manager for clean hostnames, while also filtering ads and telemetry.  
+    **Outcome:** Services are now accessible via simple hostnames (`proxmox.lab`, `npm.lab`, etc.) with HTTPS handled at NPM, and the entire LAN benefits from ad filtering.
 
 ---
 
 ## Context & Goals
 
-- Replace per-service ports (e.g., `:3000`, `:8080`) with stable HTTPS hostnames.
-- Terminate TLS at the edge (NPM) using certs issued by my **Step-CA**.
-- Keep everything internal (LAN/Tailscale), no WAN exposure.
+- **Problem:** Internal services were only reachable by IP:port → messy and insecure.  
+- **Goal:** Centralize DNS for homelab + LAN, provide hostname-based access, and block ads globally.  
+- **Constraints:**  
+  - Local-only `.lab` domain (no external resolution).  
+  - DNS resolution must forward to NPM, not direct service IPs.  
+  - Upstream DNS → Google (8.8.8.8) for non-local lookups.  
 
+---
+
+## Environment
+
+**Proxmox LXC (Unprivileged)**
+
+- Installed via community script:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pihole.sh)"
+```
 ---
 
 ## Design & Decisions
 
-- **Ingress consolidation:** NPM terminates TLS and routes to backends on the internal network.
-- **Certificates:** Issued from **Step-CA** (manual) → imported to NPM as custom certificates.
-- **DNS:** Pi-hole provides A/CNAME records for `*.lab` pointing to the NPM address.
-- **Security posture:** Only reachable on LAN/Tailscale; no WAN port-forwarding. IP allowlists can be applied in NPM if needed.
+- **Local DNS:** Pi-hole resolves all `.lab` hostnames to the NPM container (`10.10.10.165`).  
+- **Routing:** NPM then forwards requests to the correct backend service and terminates TLS.  
+- **Upstream fallback:** Any non-local query resolves via Google DNS.  
+- **Ad-blocking:** Gravity enabled by default with Pi-hole’s blocklists; no custom lists.  
 
 ---
 
 ## Implementation
 
-### Install
+### DNS Records
 
-```bash
-# Proxmox community script (LXC)
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/nginxproxymanager.sh)"
-```
+Examples of local DNS records:
 
-### Certificates (Step-CA → NPM)
+- `proxmox.lab` → `10.10.10.165` (NPM forwards to PVE host)  
+- `pi.lab` → `10.10.10.165` (NPM forwards to Pi-hole admin UI)  
+- `npm.lab` → `10.10.10.165` (direct to NPM UI on :81)  
+- `yt.lab` → `10.10.10.165` (NPM forwards to yt-dlp Material service)  
 
-Issue leaf certs per host with Step-CA (manual workflow):
+<!-- SCREENSHOT PLACEHOLDER -->
+*(Insert Pi-hole Local DNS Records UI screenshot here.)*
 
-```bash
-# Example: issue cert for grafana.home.lab
-step ca certificate "grafana.home.lab" grafana.crt grafana.key
-```
+### Clients
 
-Import into NPM:
-
-- NPM UI → **SSL Certificates** → **Add** → **Custom**
-- Paste/upload `grafana.crt` and `grafana.key`
-- Save and name the certificate clearly (e.g., `grafana.home.lab (step-ca)`)
-
-<!-- PATHS PLACEHOLDER -->
-*(If storing certs on disk for NPM to mount/reference, document your paths here.)*
-
-### Add Proxy Hosts
-
-For each app:
-
-1. **Hosts → Proxy Hosts → Add Proxy Host**
-2. **Domain Names:** `grafana.home.lab`  
-3. **Scheme:** `http` (or `https` if backend does TLS)  
-4. **Forward Hostname / IP:** `10.10.10.<backend-ip>`  
-5. **Forward Port:** `<backend-port>`  
-6. **Block Common Exploits:** enabled  
-7. **Websockets Support:** enable if the app needs it  
-8. **SSL Tab:** Select your Step-CA certificate  
-9. **Force SSL:** enabled (if appropriate)  
-10. Save
-
-Repeat for your core set:
-
-- `npm.home.lab` → `10.10.10.165:81` (optional convenience)
-- `proxmox.home.lab` → `10.10.10.<pve-ip>:8006`
-- `grafana.home.lab` → `10.10.10.<ip>:3000`
-- `pihole.home.lab` → `10.10.10.31:80`
-- etc.
+- Router/DHCP assigns `10.10.10.31` as DNS server to all LAN clients.  
+- Homelab services explicitly pointed to Pi-hole for consistency.  
 
 ---
 
 ## Pitfalls & Fixes
 
-- **Browser trust warnings**: root CA not installed on client.  
-  *Fix:* Import Step-CA root into OS/browser trust stores.
-
-- **502/504 after enabling Websockets app**: forgot to enable “Websockets Support”.  
-  *Fix:* Toggle in the Proxy Host → Options.
+- **Initial mistake:** Pointed hostnames directly to service IPs (e.g., `10.10.10.x:port`).  
+  - **Fix:** Corrected records so all `.lab` domains point to NPM (`10.10.10.165`), which handles routing and SSL termination.  
 
 ---
 
 ## Reflection
 
-- Skills demonstrated: reverse proxy design, TLS termination with internal CA, DNS mapping, and secure internal ingress patterns.
-- Why it matters: mirrors a production pattern where edge proxies centralize security policy, certificate lifecycle, and routing.
-- Next steps: script certificate rotation; add Access Lists (per-service auth); feed NPM logs into SIEM for visibility.
+- **Skills demonstrated:** DNS management, integration with reverse proxy, network-wide ad blocking.  
+- **Next steps:**  
+  - Document a standard naming convention for `.lab` records.  
+  - Export DNS config for backups.  
+  - Feed Pi-hole query logs into the SIEM/logging stack.  
