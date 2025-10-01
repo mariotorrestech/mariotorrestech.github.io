@@ -14,7 +14,7 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 
 - Virtualization: Proxmox VE
 - Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
-- Networking: Pi-hole, NGINX, Step-CA
+- Networking: Pi-hole, NGINX, [step-ca PKI](step-ca.md)
 - Containerization: Docker, Proxmox LXC
 
 ### Current Learning Focus
