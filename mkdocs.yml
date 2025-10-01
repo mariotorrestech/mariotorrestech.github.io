@@ -20,7 +20,9 @@ nav:
     
   - Homelab:
       - Homelab Overview: homelab/index.md
+      - Pi-hole DNS: homelab/pihole.md
       - Step-ca PKI: homelab/step-ca.md
+      - Nginx Proxy Manager: homelab/npm.md
       - AD Lab: homelab/activedirectory.md
       - Web App Lab: homelab/webapplab.md
 

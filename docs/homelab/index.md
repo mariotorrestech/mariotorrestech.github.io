@@ -12,9 +12,13 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 
 ### Tools & Technologies
 
+- __Networking__:
+    - [Pi-hole](pihole.md)
+    - [NGINX](npm.md)
+    - [step-ca PKI](step-ca.md)
+
 - Virtualization: Proxmox VE
 - Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
-- Networking: Pi-hole, NGINX, [step-ca PKI](step-ca.md)
 - Containerization: Docker, Proxmox LXC
 
 ### Current Learning Focus
@@ -33,7 +37,6 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
     - Cross-Site Scripting (XSS) techniques
 - Emphasis on testing methodology and documentation
 - Hands-on experience with baremetal hypervisor (Proxmox) and provisioning of internal/services
-
 
 ## Environment Overview
 
