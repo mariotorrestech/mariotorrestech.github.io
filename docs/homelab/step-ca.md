@@ -2,44 +2,41 @@
 
 !!! abstract "BLUF"
     **What I built:** An internal certificate authority using Step-CA, initialized with a root + intermediate CA.  
-    **Why it mattered:** Gave my homelab consistent TLS with a centralized trust anchor, and allowing for internal port forwarding. 
-    **Outcome:** All services now run with certificates issued from Step-CA, consumed by Nginx Proxy Manager for HTTPS. Clients trust them once the root CA is installed.
+    **Why it mattered:** Gave my homelab consistent TLS with a centralized trust anchor, and allowed internal HTTPS through Nginx Proxy Manager.  
+    **Outcome:** All services now run with certificates issued from Step-CA. Clients trust them once the root CA is installed.
 
 ---
 
 ## Context & Goals
 
-- **Problem:** Some internal services originally ran on plain HTTP. Internal port forwarding through NPM also requires a SSL certificate.
-- **Goal:** Deploy a proper PKI inside the lab that mirrors enterprise practice (root → intermediate → service certificates).  
+- **Problem:** Internal services originally ran on plain HTTP. TLS was needed for security and for Nginx Proxy Manager to proxy them.  
+- **Goal:** Deploy a PKI inside the lab that mirrors enterprise practice (root → intermediate → service certificates).  
 - **Constraints:**  
   - Local-only lab (`*.lab` domains).  
-  - Using **manual issuance** for now (no ACME automation).  
-  - Certificates loaded into Nginx Proxy Manager for TLS termination.
+  - Manual issuance at first (no ACME automation).  
+  - Certificates loaded into NPM for TLS termination.
 
 ---
 
 ## Design & Decisions
 
-- **PKI layout:** Offline root CA; online intermediate CA in a Proxmox LXC.  
-- **Trust distribution:** Intermediate CA installed into my laptop, browsers, and other clients.  
+- **PKI layout:** Offline root CA; online intermediate CA running in a Proxmox LXC.  
+- **Trust distribution:** Root stays offline, intermediate distributed to clients.  
 - **Integration:** Issue certs via CLI → import into Nginx Proxy Manager → assign to proxied services.  
-- **Why manual issuance?** Following the official Step-CA guide, I started with `step ca certificate` to keep things simple. I don't have many new services so automation is on the backburner.  
+- **Why manual issuance?** Fewer services to start with, so token/ACME automation deferred.
 
 ---
 
 ## Implementation
 
 ### Initialize the CA
-
 ```bash
-step ca init
+step ca init   --name "Homelab CA"   --dns "stepca.lab"   --address ":443"   --provisioner "admin@internal"
 ```
 
-- Created root + intermediate certs.  
-- Root stored offline; intermediate runs inside container.  
-- Configured `ca.json` with DNS name (e.g., `ca.home.lab`).  
-
-<!-- CONFIG FILE PLACEHOLDER -->
+- Root + intermediate created.  
+- Root stored offline; intermediate lives in container.  
+- Configured `ca.json` with DNS name `stepca.lab`.
 
 ```json
 // Example excerpt from /home/step/config/ca.json (sanitized)
@@ -53,26 +50,32 @@ step ca init
 ```
 
 ### Start the CA Service
-
 ```bash
 systemctl enable step-ca
 systemctl start step-ca
 ```
 
-### Issue a Certificate (manual)
-
+### Bootstrap a Client
 ```bash
-# Example: issue cert for nginx.home.lab
-step ca certificate "nginx.lab" nginx.crt nginx.ksey
+step ca bootstrap   --ca-url https://stepca.lab   --fingerprint <ROOT_FP>
+```
+
+### Health Check
+```bash
+step ca health   --ca-url https://stepca.lab   --root /etc/ssl/step/root_ca.crt
+```
+
+### Issue a Certificate (manual)
+```bash
+# Example: issue cert for nginx.lab
+TOKEN=$(step ca token nginx.lab)
+step ca certificate "nginx.lab" nginx.crt nginx.key   --token "$TOKEN"   --ca-url https://stepca.lab   --root /etc/ssl/step/root_ca.crt
 ```
 
 - Copy `nginx.crt` + `nginx.key` into NPM.  
-- In NPM: add new SSL cert → assign to proxy host.  
-
-<!-- SCREENSHOT / PATH PLACEHOLDER -->
+- In NPM: add new SSL cert → assign to proxy host.
 
 ### Trust the Root
-
 - Export `root_ca.crt`.  
 - Install into OS trust stores (macOS Keychain, browsers, etc.).  
 - Import into containers/services as needed.
@@ -82,34 +85,45 @@ step ca certificate "nginx.lab" nginx.crt nginx.ksey
 ## Operations
 
 ### Renewal
-
-- Track expiry dates.  
-- Re‑issue with `step ca certificate` before expiry.  
-- Reload NPM to pick up the updated cert.  
-- Plan: add script/cron to automate renewal.  
+- Manual: re-issue with `step ca certificate` before expiry.  
+- Automated:  
+  ```bash
+  step ca renew --daemon     --exec "systemctl reload nginx"     /etc/ssl/npm.crt /etc/ssl/npm.key
+  ```
 
 ### Backup
+- Offline backup of root + intermediate private keys (encrypted).  
+- Version-controlled configs (no secrets).  
+- Archive root cert with docs.
 
-- Offline backup of root and intermediate private keys (encrypted).  
-- Version‑controlled config (without secrets).  
-- Root cert archived with documentation.
+---
+
+## Optional: ACME Integration
+- Add ACME provisioner on CA host:
+  ```bash
+  step ca provisioner add acme-lab --type ACME
+  ```
+- Directory URL:  
+  `https://stepca.lab/acme/acme-lab/directory`  
+- Configure NPM → Let’s Encrypt → Custom ACME directory above.  
+- Use DNS-01 challenges against `.lab` DNS zone.  
+- Benefit: full auto-issue and renewal.
 
 ---
 
 ## Pitfalls & Fixes
 
-- **Untrusted warnings** → forgot to install root CA.
-*Fix:* add root to trust stores.  
-- **Cert not applied in NPM** → service not reloaded. *Fix:* restart NPM after updating cert.  
-- **Web consoles not loading** → web consoles not connecting after adding to NPM. *Fix:* enable WebSockets support in the NPM entry for Proxmox.  
+- **Untrusted warnings** → root CA not installed. *Fix:* add root to trust stores.  
+- **Cert not applied in NPM** → forgot reload. *Fix:* reload NPM after update.  
+- **Web consoles not loading** → missing WebSockets in NPM entry. *Fix:* enable WebSockets for proxied services.  
 
 ---
 
 ## Reflection
 
-- **Skills demonstrated:** PKI hierarchy, cert issuance, TLS termination with reverse proxy, trust distribution.  
-- **Why this matters:** Similar principles used in enterprise internal PKI setups.  
+- **Skills demonstrated:** PKI hierarchy, cert issuance, TLS termination, trust distribution.  
+- **Why this matters:** Mirrors enterprise PKI/CA practice in a lab.  
 - **Next steps:**  
-  - Script renewals with `step` CLI.  
-  - Centralize certificate inventory and alerting (feed into SIEM/logging).  
-  - Enable ACME in the future to remove manual steps entirely.  
+    - Script renewals and reloads.  
+    - Centralize certificate inventory + logging.  
+    - Roll out ACME for automation.

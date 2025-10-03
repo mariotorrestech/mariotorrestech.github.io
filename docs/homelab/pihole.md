@@ -25,6 +25,7 @@
 - Installed via community script:
 
 ```bash
+# install command
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/pihole.sh)"
 ```
 ---

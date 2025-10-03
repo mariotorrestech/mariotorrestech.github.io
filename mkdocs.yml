@@ -7,7 +7,7 @@ site_dir: site
 nav:
   - Home: index.md
   - About Me: about.md
-  - Certfications:
+  - Certifications:
     - CISSP Overview: certifications/cissp.md
     - Domain 1 - Asset Security: certifications/domains/domain1.md
     - Domain 2 - Asset Security: certifications/domains/domain2.md
