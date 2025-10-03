@@ -13,9 +13,9 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 ### Tools & Technologies
 
 - __Networking__:
-    - [Pi-hole](pihole.md)
-    - [NGINX](npm.md)
-    - [step-ca PKI](step-ca.md)
+    - [Pi-hole](pihole.md) - DNS server and domain wide ad-blocking
+    - [NGINX Proxy Manager](npm.md) - Port forwarding and reverse proxy 
+    - [step-ca PKI](step-ca.md) - Certificate Authority server
 
 - Virtualization: Proxmox VE
 - Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
@@ -29,14 +29,8 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
 
 #### [Web Application Security Lab](webapplab.md)
 
-- OWASP Juice Shop with Burp Suite and FoxyProxy setup
-- Key vulnerability focus areas:
-    - SQL Injection and authentication attacks
-    - Data exposure and XXE vulnerabilities
-    - Access control and security misconfigurations
-    - Cross-Site Scripting (XSS) techniques
+- OWASP Juice Shop hosted on the Kali Linux attack platform hosted on the Kali Linux attack platform.
 - Emphasis on testing methodology and documentation
-- Hands-on experience with baremetal hypervisor (Proxmox) and provisioning of internal/services
 
 ## Environment Overview
 
