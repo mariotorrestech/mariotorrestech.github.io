@@ -56,7 +56,7 @@ Import into NPM:
 For each app:
 
 1. **Hosts → Proxy Hosts → Add Proxy Host**
-2. **Domain Names:** `grafana.home.lab`  
+2. **Domain Names:** `npm.lab`  
 3. **Scheme:** `http` (or `https` if backend does TLS)  
 4. **Forward Hostname / IP:** `10.10.10.<backend-ip>`  
 5. **Forward Port:** `<backend-port>`  
@@ -68,10 +68,9 @@ For each app:
 
 Repeat for your core set:
 
-- `npm.home.lab` → `10.10.10.165:81` (optional convenience)
-- `proxmox.home.lab` → `10.10.10.<pve-ip>:8006`
-- `grafana.home.lab` → `10.10.10.<ip>:3000`
-- `pihole.home.lab` → `10.10.10.31:80`
+- `npm.lab` → `10.10.10.165:81` (optional convenience)
+- `proxmox.lab` → `10.10.10.<pve-ip>:8006`
+- `pihole.lab` → `10.10.10.31:80`
 - etc.
 
 ---
@@ -88,6 +87,8 @@ Repeat for your core set:
 
 ## Reflection
 
-- Skills demonstrated: reverse proxy design, TLS termination with internal CA, DNS mapping, and secure internal ingress patterns.
-- Why it matters: mirrors a production pattern where edge proxies centralize security policy, certificate lifecycle, and routing.
-- Next steps: script certificate rotation; add Access Lists (per-service auth); feed NPM logs into SIEM for visibility.
+- **Skills demonstrated**: reverse proxy design, TLS termination with internal CA, DNS mapping, and secure internal ingress patterns.
+- **Next steps**:
+     - Script certificate rotation
+     - Add Access Lists (per-service auth)
+     - Feed NPM logs into SIEM for visibility
