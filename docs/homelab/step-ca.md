@@ -12,9 +12,9 @@
 - **Problem:** Internal services originally ran on plain HTTP. TLS was needed for security and for Nginx Proxy Manager to proxy them.  
 - **Goal:** Deploy a PKI inside the lab that mirrors enterprise practice (root → intermediate → service certificates).  
 - **Constraints:**  
-  - Local-only lab (`*.lab` domains).  
-  - Manual issuance at first (no ACME automation).  
-  - Certificates loaded into NPM for TLS termination.
+    - Local-only lab (`*.lab` domains).  
+    - Manual issuance at first (no ACME automation).  
+    - Certificates loaded into NPM for TLS termination.
 
 ---
 
@@ -95,19 +95,6 @@ step ca certificate "nginx.lab" nginx.crt nginx.key   --token "$TOKEN"   --ca-ur
 - Offline backup of root + intermediate private keys (encrypted).  
 - Version-controlled configs (no secrets).  
 - Archive root cert with docs.
-
----
-
-## Optional: ACME Integration
-- Add ACME provisioner on CA host:
-  ```bash
-  step ca provisioner add acme-lab --type ACME
-  ```
-- Directory URL:  
-  `https://stepca.lab/acme/acme-lab/directory`  
-- Configure NPM → Let’s Encrypt → Custom ACME directory above.  
-- Use DNS-01 challenges against `.lab` DNS zone.  
-- Benefit: full auto-issue and renewal.
 
 ---
 

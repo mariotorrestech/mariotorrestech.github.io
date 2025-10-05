@@ -12,9 +12,9 @@
 - **Problem:** Internal services were only reachable by IP:port → messy and insecure.  
 - **Goal:** Centralize DNS for homelab + LAN, provide hostname-based access, and block ads globally.  
 - **Constraints:**  
-  - Local-only `.lab` domain (no external resolution).  
-  - DNS resolution must forward to NPM, not direct service IPs.  
-  - Upstream DNS → Google (8.8.8.8) for non-local lookups.  
+    - Local-only `.lab` domain (no external resolution).  
+    - DNS resolution must forward to NPM, not direct service IPs.  
+    - Upstream DNS → Google (8.8.8.8) for non-local lookups.  
 
 ---
 
@@ -71,6 +71,7 @@ Examples of local DNS records:
 
 - **Skills demonstrated:** DNS management, integration with reverse proxy, network-wide ad blocking.  
 - **Next steps:**  
-  - Document a standard naming convention for `.lab` records.  
-  - Export DNS config for backups.  
-  - Feed Pi-hole query logs into the SIEM/logging stack.  
+    - Document a standard naming convention for `.lab` records.  
+    - Export DNS config for backups.  
+    - Feed Pi-hole query logs into the SIEM/logging stack.  
+  

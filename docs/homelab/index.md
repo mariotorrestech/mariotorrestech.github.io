@@ -8,7 +8,7 @@ title: Security Homelab
 
 ![image](../assets/nuc8.jpg)
 
-My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC - born for gaming, now runs the lab.
+My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC - born for gaming, now runs the lab. I have more info below on some of the technology behind this lab.
 
 ### Tools & Technologies
 
@@ -17,9 +17,10 @@ My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel H
     - [NGINX Proxy Manager](npm.md) - Port forwarding and reverse proxy 
     - [step-ca PKI](step-ca.md) - Certificate Authority server
 
-- Virtualization: Proxmox VE
-- Penetration Testing: Kali Linux, Burp Suite, Metasploit, Nmap
-- Containerization: Docker, Proxmox LXC
+- __Virtualization__:
+    - Proxmox VE
+- __Containerization__:
+    - Docker, Proxmox LXC
 
 ### Current Learning Focus
 
@@ -49,17 +50,5 @@ graph TD
     LAB --> ADLAB[AD Security Lab]
     LAB --> WEBLAB[Web Security Lab]
 ```
-
-## Network Segmentation
-
-| VLAN       | Purpose                      | Security Controls                                                                      |
-| ---------- | ---------------------------- | -------------------------------------------------------------------------------------- |
-| Production | Core infrastructure services | • Strict firewall rules<br>• Limited external access<br>• Service isolation            |
-| Admin      | Management access            | • Admin-only access<br>• Restricted to authorized devices<br>• Enhanced authentication |
-| Lab        | Security testing environment | • Completely isolated<br>• No internet access<br>• Sandboxed environment               |
-
----
-
----
 
 _Return to [Home](../index.md)_
