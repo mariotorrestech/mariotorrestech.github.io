@@ -345,41 +345,41 @@ The **evaluation** process is part of the CC that creates meaningful documentati
 
 !!! note "Core Concepts"
 
-    - Security control frameworks:
-          - Aid with the control selection process
-          - Provide guidance, based up best practices
-          - Features from multiple frameworks can be used to meet the needs of an org
+  - Security control frameworks:
+        - Aid with the control selection process
+        - Provide guidance, based up best practices
+        - Features from multiple frameworks can be used to meet the needs of an org
 
 Control frameworks provide comprehensive guidance based upon best practices.
 
 **Understand the major frameworks at a high level, especially ISO 27001/02, which is internationally recognized framework**
 
-**- COBIT**
+**COBIT**
 
-      - Control objectives for IT framework is particularly useful for IT assurance, such as conducting audits and gap assessments
-      - Created for IT governance, and therefore particularly useful for IT assurance activities
+- Control objectives for IT framework is particularly useful for IT assurance, such as conducting audits and gap assessments
+- Created for IT governance, and therefore particularly useful for IT assurance activities
 
-**- ITIL**
+**ITIL**
 
-      - Defines the processes a well run IT department
-      - from the onboaording process, to procurement, change management, configuration management, and access control, etc.
-      - Defines the processes for IT service management that focuses on aligning IT services with business goals and objectives
+- Defines the processes a well run IT department
+- from the onboaording process, to procurement, change management, configuration management, and access control, etc.
+- Defines the processes for IT service management that focuses on aligning IT services with business goals and objectives
 
-- **NIST SP 800-53**
+**NIST SP 800-53**
 
-    - Best practices to help organize cybersecurity control
+  - Best practices to help organize cybersecurity control
 
-- **PCI DSS**
+**PCI DSS**
 
-    - Standards for organizations handling credit cards
+  - Standards for organizations handling credit cards
 
-- **ISO 27001**
+**ISO 27001**
 
-    - Specific the requirements for establishing, implementing, maintaining, and continuinally improving an information security management system within the context of the organization.
-    - Also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization.
-    - The requirements set out in the ISO 27001 are generic and are intended to be applicable to all organizations, regardless of type/size/nature
+  - Specific the requirements for establishing, implementing, maintaining, and continuinally improving an information security management system within the context of the organization.
+  - Also includes requirements for the assessment and treatment of information security risks tailored to the needs of the organization.
+  - The requirements set out in the ISO 27001 are generic and are intended to be applicable to all organizations, regardless of type/size/nature
 
-    - **Organizations can be certified against ISO 27001**
+  - **Organizations can be certified against ISO 27001**
       - **Annex A** of the standard contains the following domains:
 
             1. Information security policies
@@ -397,29 +397,29 @@ Control frameworks provide comprehensive guidance based upon best practices.
             13. Information security aspects of business continuity management
             14. Compliance
 
-- **ISO 27002**
+**ISO 27002**
 
-      - Provides **guidelines** for organization information security standards and information security management practices including selection, implementation, and management of controls, taking into consideration the organization's information security risk environment.
-      - **Essentially ISO 27002 provides guidance for implementing controls in ISO 27001**
+  - Provides **guidelines** for organization information security standards and information security management practices including selection, implementation, and management of controls, taking into consideration the organization's information security risk environment.
+  - **Essentially ISO 27002 provides guidance for implementing controls in ISO 27001**
 
-- **COSO**
+**COSO**
 
-- **HIPAA**
+**HIPAA**
 
-    - Relates to security controls in the **healthcare industry**
+  - Relates to security controls in the **healthcare industry**
 
-- **FISMA**
+**FISMA**
 
-    - Requires federal agencies to develop, implement agency wide security programs provide information security for the operations/assets of the agency
+  - Requires federal agencies to develop, implement agency wide security programs provide information security for the operations/assets of the agency
 
-- **FedRAMP**
+**FedRAMP**
 
-    - Any cloud services that hold US federal govt data must be FedRAMP authorized
+  - Any cloud services that hold US federal govt data must be FedRAMP authorized
 
-- **SOX**
+**SOX**
 
-    - Sarbanes-Oxley Acts is a direct result of the financial fraud at Enron.
-    - Prevents financial fraud by public companies and thereby protects the financial interests of shareholders
+  - Sarbanes-Oxley Acts is a direct result of the financial fraud at Enron.
+  - Prevents financial fraud by public companies and thereby protects the financial interests of shareholders
 
 ## Understand security capabilities of information systems
 
@@ -489,9 +489,9 @@ Problem State
           - Memory segmentation
           - Time division multiplexing
 
-From a security perspective, process isolation is a critical element of computing, it prevents objects from interacting with each other and their resources.
+    From a security perspective, process isolation is a critical element of computing, it prevents objects from interacting with each other and their resources.
 
-In other words**, the actions of one object should not affect the state of other objects**
+    In other words**, the actions of one object should not affect the state of other objects**
 
 **Time-Division Multiplexing**
 
@@ -642,8 +642,6 @@ In other words**, the actions of one object should not affect the state of other
     - Mobile Device Management (MDM) and Mobile Application (MAM) solutions help organizations secure devices and the applications that run on them
     - Mobile device management solutions should particularly focus on securing remote access using a VPN and end-point security as well as securing applications on the device through application whitelisting
 
-**Mobile Devices**
-
 **Reduce Risk in Mobile-based Systems**
 
 **What is the primary different between MDM and MAM?**
@@ -745,8 +743,6 @@ What's an underlying risk to distributed file systems (DFS)?
 
 ### Cloud Service and Deployment Models
 
-**
-**
 !!! note "Core Concepts"
 
     ### Characteristics of cloud computing:
@@ -785,7 +781,7 @@ What's an underlying risk to distributed file systems (DFS)?
 - Public, Private, Community, Hybrid
 
 
-_Protection and privacy of data in the cloud should be carefully considered_
+!!! warning "_Protection and privacy of data in the cloud should be carefully considered_"
 
 ### Compute in the Cloud
 
@@ -842,9 +838,9 @@ _Protection and privacy of data in the cloud should be carefully considered_
 
         - Carrier, architect, administrator, developer, operator, services manager, reseller, data subject, owner, controller, processor, steward (why so many titles?)
 
-  - Cloud consumer is always accountable for their data stored in the cloud
+Cloud consumer is always accountable for their data stored in the cloud
 
-  - Responsibility can be delegated to other cloud computing roles
+Responsibility can be delegated to other cloud computing roles
 
 - **Data controller = owner of data = cloud customer = _accountable_**
 
