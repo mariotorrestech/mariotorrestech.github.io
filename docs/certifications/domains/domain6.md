@@ -314,7 +314,7 @@ Misuse Testing
 
 !!! note "Core Concepts"
 
-    - audit standards hve matured over the years from SAS70 - SSAE 16 - SSAE 18
+    - Audit standards hve matured over the years from SAS70 - SSAE 16 - SSAE 18
     - ISAE 3402 is the international standard in assurance engagements and is quite similar to SSAE 16/18 standards with slight variations
 
 
@@ -344,32 +344,31 @@ SOC audits are used to **build trust** between service organizations and their c
 
 !!! note "Core Concepts"
 
-    - Audit roles include: 
+    Audit roles include: 
 
   
+      - #### Executive sr management
 
-  - #### Executive sr management
+          - Sets the **proper tone** from the top, promotes the audit process, and provides support 
 
-    - Sets the **proper tone** from the top, promotes the audit process, and provides support 
+      - #### Audit committee
 
-  - #### Audit committee
+          - Composed of members of the board/sr stakeholders to **provide oversight** of the audit program
 
-    - Composed of members of the board/sr stakeholders to **provide oversight** of the audit program
+      - #### Security officer
 
-  - #### Security officer
+          - **Advise on security** related risks to be evaluated in the audit program
 
-    - **Advise on security** related risks to be evaluated in the audit program
+      - #### Compliance manager 
 
-  - #### Compliance manager 
+          - Ensure **corporate complicance with applicable laws** and regulations, profiessional, standards, and company policy
 
-    - Ensure **corporate complicance with applicable laws** and regulations, profiessional, standards, and company policy
+      - #### Internal auditors
 
-  - #### Internal auditors
+          - Company employees who **provide assurance that corporate internal controls** are operating effectively
 
-    - Company employees who **provide assurance that corporate internal controls** are operating effectively
+      - #### External auditors
 
-  - #### External auditors
-
-    - Provide an unbiased and independent audit report as they are **independent** of the entity being audited
+          - Provide an unbiased and independent audit report as they are **independent** of the entity being audited
 
 - Audit responsibility vary based upon the audit role
