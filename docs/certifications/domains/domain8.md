@@ -10,28 +10,28 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Security's Involvement in Development
 
-######Core Concepts:
+!!! note "Core Concepts"
 
-- Security should be involved at every phase of the development life cycle
+    - Security should be involved at every phase of the development life cycle
 
 ### SDLC and SLC
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Security should be considered at every phase of sdlc/SLC
-- Risk analysis and threat modeling are very important components of the eaerly phases of SDLC/SLC
-- Testing should include static, dynamic, and fuzz (a form of dynamic testing) tests
-- Certification and accreditation should be performed prior to release/deployment/implemnetation
+    - Security should be considered at every phase of sdlc/SLC
+    - Risk analysis and threat modeling are very important components of the eaerly phases of SDLC/SLC
+    - Testing should include static, dynamic, and fuzz (a form of dynamic testing) tests
+    - Certification and accreditation should be performed prior to release/deployment/implemnetation
 
 ### Development Methodologies
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Development methodologies exist for the sake of efficient and effective code development
-- Many methodologies are a reflection of the waterfall methodology
-- Regardless of the methodology, security should be considered at every stage of the development process
-- Methodologies can be combine to utilize the best features of each of them
-- Agile scrum masters understand how all team efforts fit together and can. therefore effectively and efficiently lead activities
+    - Development methodologies exist for the sake of efficient and effective code development
+    - Many methodologies are a reflection of the waterfall methodology
+    - Regardless of the methodology, security should be considered at every stage of the development process
+    - Methodologies can be combine to utilize the best features of each of them
+    - Agile scrum masters understand how all team efforts fit together and can. therefore effectively and efficiently lead activities
 
 ###### Be familiar with various development methodologies and key characteristics of each:
 
@@ -59,9 +59,9 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Maturity Models
 
-#####Core Concepts:
+!!! note "Core Concepts"
 
-- Like development methodologies, maturity models also help improve the development process
+    - Like development methodologies, maturity models also help improve the development process
 
 - Capability Maturity Model Integration (CMMI) is one of the most popular models and includes six levels of maturity
 
@@ -94,17 +94,17 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### DevOps
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- An integrated product team is really a fancy term for DevOps: software development, operations, quality assurance (QA)
-- Ideally, DevOps should include security as an integral part of the development process and be referred to as DevSecOps
+    - An integrated product team is really a fancy term for DevOps: software development, operations, quality assurance (QA)
+    - Ideally, DevOps should include security as an integral part of the development process and be referred to as DevSecOps
 
 ### Canary Testing and Deployments
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- **Canary** testing and deployments refer to hyperfocused testing of new application code/features by pushing out the changes to a small subset of users versus pushing out to all users
-- **Smoke** testing
+    - **Canary** testing and deployments refer to hyperfocused testing of new application code/features by pushing out the changes to a small subset of users versus pushing out to all users
+    - **Smoke** testing
 
 ## Identify and apply security controls in software development ecosystems
 
@@ -112,9 +112,9 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Code Obfuscation
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Obfuscation refers to hiding or obscuring something; code obfuscation refers to hiding or obscuring code to protect it from unauthorized viewing or interpretation of the logic
+    - Obfuscation refers to hiding or obscuring something; code obfuscation refers to hiding or obscuring code to protect it from unauthorized viewing or interpretation of the logic
 
 - Three primary types of code obfuscation
 
@@ -128,56 +128,56 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### DBMS, Concurrency, and Lock Controls
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Components of DBS include: hardware, software, language (SQL), users, data
-- Database terms: cols/fields = attributes; records/rows = tuples
-- Foundation of a relational database is the concept of primary and foreign keys
-  - **Primary keys:**
-    - one ore more cols whos value uniquely identify a tuple (row) within a relational database
-  - **Foreign keys:**
-    - one or more cols whose values in a table refer to the primary key in another table
-  - **Concurrency**
-    - abiity for multiple processes to access or change shared data at the same time
-  - Locks prevent data corruption when multiple users try to Write to the database simultaneously
-  - ACID: Atomicity, Consistency, Isolation, Durability
+    - Components of DBS include: hardware, software, language (SQL), users, data
+    - Database terms: cols/fields = attributes; records/rows = tuples
+    - Foundation of a relational database is the concept of primary and foreign keys
+      - **Primary keys:**
+        - one ore more cols whos value uniquely identify a tuple (row) within a relational database
+      - **Foreign keys:**
+        - one or more cols whose values in a table refer to the primary key in another table
+      - **Concurrency**
+        - abiity for multiple processes to access or change shared data at the same time
+      - Locks prevent data corruption when multiple users try to Write to the database simultaneously
+      - ACID: Atomicity, Consistency, Isolation, Durability
 
 ### Metadata
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Data about other data
+    - Data about other data
 
 ### Development Ecosystems
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- CI/CD, SOAR, and SCM are development ecosystems
-- Though the focus of each is different, they each share common characteristics
+    - CI/CD, SOAR, and SCM are development ecosystems
+    - Though the focus of each is different, they each share common characteristics
 
 ## Assess the effectiveness of software security
 
 ### Software Security Assessment Methods
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Software security effectiveness can be determined through auditing and logging of changes and risk analysis and mitigation, among other methods
-- Review domain 6 for more details
+    - Software security effectiveness can be determined through auditing and logging of changes and risk analysis and mitigation, among other methods
+    - Review domain 6 for more details
 
 ## Assess security impact of acquired software
 
 ### Acquiring Software
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Acquiring software should be taken as seriously as developing softwarwe, and security should be considered at every step in the process
-- Software assurance phases for acquisition including:
-    - Planning/requirements
-    - Contracting
-    - Acceptance
-    - Monitoring
-    - Etc.
-- Common ways to acquire software is via: Commercial-off-the-shelf (COTS), open source, third party, managed services
+    - Acquiring software should be taken as seriously as developing softwarwe, and security should be considered at every step in the process
+    - Software assurance phases for acquisition including:
+        - Planning/requirements
+        - Contracting
+        - Acceptance
+        - Monitoring
+        - Etc.
+    - Common ways to acquire software is via: Commercial-off-the-shelf (COTS), open source, third party, managed services
 
 ## Define and apply secure coding guidelines and standards
 
@@ -188,44 +188,44 @@ _Application Security. Needs to be involved during an application's entire life 
 
 ### Buffer Overflow
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Buffer overflow is a common problem with applications and happens when information sent to a storage buffer exceeds the capacity of the buffer
-- Buffer overflow vulnerabilities can be exploited to elevated privileges or launch malicious code
-- **Address space layout randomization (ASLR)**
-    - One of the best ways to mitigate buffer overflows
-    - Randomizes the locations of where system executables are loaded into memory.
+    - Buffer overflow is a common problem with applications and happens when information sent to a storage buffer exceeds the capacity of the buffer
+    - Buffer overflow vulnerabilities can be exploited to elevated privileges or launch malicious code
+    - **Address space layout randomization (ASLR)**
+        - One of the best ways to mitigate buffer overflows
+        - Randomizes the locations of where system executables are loaded into memory.
 
 - **Bounds checking:**
     - Another way to protect against buffer overflows
 
 ### Application Programming Interfaces (APIs)
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- APIs provide a way for apps to communicate with each other; APIs act as translators
-- 2 of the most common APIs are Representational State Transfer (REST) and Simple Object Access Protocol (SOAP)
-- APIs should be secured along with other components of an application; security can include authentication and authorization mechanisms, TLS encryption for data traversing insecure channels, API gateways, and data validation, among others
+    - APIs provide a way for apps to communicate with each other; APIs act as translators
+    - 2 of the most common APIs are Representational State Transfer (REST) and Simple Object Access Protocol (SOAP)
+    - APIs should be secured along with other components of an application; security can include authentication and authorization mechanisms, TLS encryption for data traversing insecure channels, API gateways, and data validation, among others
 
 ### Secure Coding Practices
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Secure programming can help preven software vulnerabilities
-- Secure coding practices include:
-    - Input validation
-    - Authentication and password management, session management, among others
-    - Coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
-    - Low coupling (meaning units of code can stand alone) and high cohesion (meaning the code that makes up a unit of code is highly related) are optimal
-    - Polyinstantiation refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
+    - Secure programming can help preven software vulnerabilities
+    - Secure coding practices include:
+        - Input validation
+        - Authentication and password management, session management, among others
+        - Coupling and cohesion are relational terms that indicate the level of relatedness between units of a code base (coupling) and the level of relatedness between the code that makes up a unit of code (cohesion)
+        - Low coupling (meaning units of code can stand alone) and high cohesion (meaning the code that makes up a unit of code is highly related) are optimal
+        - Polyinstantiation refers to something being instantiated into multiple separate or independent instances and can be used to prevent unauthorized inference
 
 ### Software Development Vulnerabilities
 
-#######Core Concepts:
+!!! note "Core Concepts"
 
-- Insecure coding practices and citizen developers writing code usually leads to software development vulnerabilities
-- Backdoor/trapdoor attacks often result from software vulnerabilities
-- Between-the-lines attack = attacker intercepts/modifies communication between devices/people over a network; also known as a man-in-the-middle attack
+    - Insecure coding practices and citizen developers writing code usually leads to software development vulnerabilities
+    - Backdoor/trapdoor attacks often result from software vulnerabilities
+    - Between-the-lines attack = attacker intercepts/modifies communication between devices/people over a network; also known as a man-in-the-middle attack
 
 ---
 
