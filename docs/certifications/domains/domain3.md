@@ -140,6 +140,8 @@ TRUST NOTHING and is based upon the premise that organizations should not automa
 
       CAN: Read down, Write up
 
+!!! warning "BELL LAPADULA IS FOR **CONFIDENTIALITY**    |     BIBA IS FOR **INTEGRITY**"
+
 !!! abstract "Biba"
 
     *Addresses only integrity*
@@ -156,8 +158,6 @@ TRUST NOTHING and is based upon the premise that organizations should not automa
       __Memory trick__: Bieber == RuWd (Rude)
 
      CAN: Read up, Write down
-
-!!! warning "BELL LAPADULA IS FOR **CONFIDENTIALITY**    |     BIBA IS FOR **INTEGRITY**"
 
 **Lipner Implementation**
 
