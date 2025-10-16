@@ -4,19 +4,20 @@
 
 ## Design and validate assessment, test, and audit strategies
 
-Purpose:
+!!! note "Overview"
 
-_Focuses on providing assurance to stakeholders, how security is contributing to goals and objectives, and that the right level of security is built into an architecture that provides value to the organization._
 
-***Ensure that security requirements/controls are defined, tested, and operating effectively*** 
+    Focuses on providing assurance to stakeholders, how security is contributing to goals and objectives, and that the right level of security is built into an architecture that provides value to the organization.
+
+    ***Ensure that security requirements/controls are defined, tested, and operating effectively*** 
 
 
 
 ### Validation and Verification
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Validation answers one fundamental question:
+    - Validation answers one fundamental question:
 
     - *Are we building the **right product**?*
     - Develop a level of confidence that business requirements are clearly understood and have been validated with the business owner
@@ -31,21 +32,21 @@ _Focuses on providing assurance to stakeholders, how security is contributing to
 
 ### Effort to Invest in Testing
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- The purpose of security assessment and testing is to provide assurance regarding the architecture, application, or system being assessed and tested
-- Assurance is provided through validation and verification
-- The effort to invest in testing should be proportionate to the value the application or system represents to the organization
-- Assessment, Testing, and Auditing strategies include:
-  - **Internal**
-    - testing conducted by somebody internal to the organization
-  - **External**
-    - somebody internal examining an external provider's controls
-    - an organization asking somebody external from the company to come in and provide and unbiased examination of an app or system
-  - **Third** **party**
-    - customer, vendor, independent audit firm
-- The role of a security professional is to:
-  - identify risk and advise testing processes to ensure risks are appropriately evaluated
+    - The purpose of security assessment and testing is to provide assurance regarding the architecture, application, or system being assessed and tested
+    - Assurance is provided through validation and verification
+    - The effort to invest in testing should be proportionate to the value the application or system represents to the organization
+    - Assessment, Testing, and Auditing strategies include:
+      - **Internal**
+        - testing conducted by somebody internal to the organization
+      - **External**
+        - somebody internal examining an external provider's controls
+        - an organization asking somebody external from the company to come in and provide and unbiased examination of an app or system
+      - **Third** **party**
+        - customer, vendor, independent audit firm
+    - The role of a security professional is to:
+      - identify risk and advise testing processes to ensure risks are appropriately evaluated
 
 
 
@@ -53,10 +54,10 @@ _Focuses on providing assurance to stakeholders, how security is contributing to
 
 ### Testing Overview
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Security control testing typically includes steps that align with the phases of the application and systems development process
-- software testing includes several types of testing that build upon one another: unit testing, interface testing, integration testing, system testing
+    - Security control testing typically includes steps that align with the phases of the application and systems development process
+    - software testing includes several types of testing that build upon one another: unit testing, interface testing, integration testing, system testing
 
 
 
@@ -90,20 +91,20 @@ _Focuses on providing assurance to stakeholders, how security is contributing to
 
 ### Testing Techniques
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Testing techniques are broken down broadly into 2 categories
-    - manual
-      - performed by a person
-    - automated
-      - performed by an automated tool
-- Static application security testing (SAST) looks at the underlying source code of an application while the application is not running; SAST is considered white box testing, because the code is visible 
-- Dynamic application security testing (DAST) examines an application and system as the underlying code executes; DAST is consider black box testing, because the code is not visible
-- Fuzz testing is a form of dynamic testing and is premised upon chaos, to see how an application responds to complete randomness
-- Code review is considered from 2 perspectives: white/black box
-- Test types include: positive, negative, misues
-- Equivalence partitioning is testing, where specific input values are used to test from a grouping perspective (partitions of values and possible inputs)
-- Boundary value analysis is testing from a bounds perspective (lower and upper bounds of groups or partitions)
+    - Testing techniques are broken down broadly into 2 categories
+        - manual
+          - performed by a person
+        - automated
+          - performed by an automated tool
+    - Static application security testing (SAST) looks at the underlying source code of an application while the application is not running; SAST is considered white box testing, because the code is visible 
+    - Dynamic application security testing (DAST) examines an application and system as the underlying code executes; DAST is consider black box testing, because the code is not visible
+    - Fuzz testing is a form of dynamic testing and is premised upon chaos, to see how an application responds to complete randomness
+    - Code review is considered from 2 perspectives: white/black box
+    - Test types include: positive, negative, misues
+    - Equivalence partitioning is testing, where specific input values are used to test from a grouping perspective (partitions of values and possible inputs)
+    - Boundary value analysis is testing from a bounds perspective (lower and upper bounds of groups or partitions)
 
 
 
@@ -162,27 +163,27 @@ Misuse Testing
 
 ### Vulnerability Assessment and Penetration Testing
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Vulnerability testing techniques tend to be automated and can be performed in minutes, hours, or days; penetration testing techniques tend to be manual and can take several days, depending on complexity
-- Penetration testing stages include: recon, enum, vulnerability analysis, execution, and document findings
-- Testing perspectives include: internal and external (corporate network)
-- Testing approaches include: blind, double-blind
-- Testing knowledge includes: zero/black box, partial/grey box, full/white box
+    - Vulnerability testing techniques tend to be automated and can be performed in minutes, hours, or days; penetration testing techniques tend to be manual and can take several days, depending on complexity
+    - Penetration testing stages include: recon, enum, vulnerability analysis, execution, and document findings
+    - Testing perspectives include: internal and external (corporate network)
+    - Testing approaches include: blind, double-blind
+    - Testing knowledge includes: zero/black box, partial/grey box, full/white box
 
 
 
 ### Vulnerability Management 
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Vulnerability management is the cyclical process of identifying, classifying, prioritizing, and mitigating vulnerabilities 
+    - Vulnerability management is the cyclical process of identifying, classifying, prioritizing, and mitigating vulnerabilities 
 
 ### Vulnerability Scanning
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Automated vulnerability scanning can help ID vulnerabilities from an organizational perspective as well as from the perspective of an attacker
+    - Automated vulnerability scanning can help ID vulnerabilities from an organizational perspective as well as from the perspective of an attacker
 
 - 2 primary types of vulnerability scans:
 
@@ -209,9 +210,9 @@ Misuse Testing
 
 ### Log Review And Analysis
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- log review and analysis is a best practice that should be used in every organization 
+    - log review and analysis is a best practice that should be used in every organization 
 
 - logs should include what is relevant, be proactively reviewed, and be especially scrutinized for errors and anomalies that point to problems, modifications, or breaches
 
@@ -231,22 +232,22 @@ Misuse Testing
 
 ### Operation Testing - Synthetic Transactions and RUM
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Operational testing occurs while a system is operating
-- Operational testing techniques include:
-    - Real User Monitoring
-        - monitors user interactions and activity with a website/app
-    - Synthetic Performance Monitoring
-        - examines functionality and performance under load
+    - Operational testing occurs while a system is operating
+    - Operational testing techniques include:
+        - Real User Monitoring
+            - monitors user interactions and activity with a website/app
+        - Synthetic Performance Monitoring
+            - examines functionality and performance under load
 
 ### Regression Testing
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Regression testing is the process of verifying that previously tested and functional software still works after updates have been made
-- Regression testing should be performed after enhancements have ben made or after patches to address vulnerabilities or problems have been issues
-- Results of regression testing should be captured and communicated in a manner that is specific and relevant to the party reading the results– this is done using 'metrics that matter'
+    - Regression testing is the process of verifying that previously tested and functional software still works after updates have been made
+    - Regression testing should be performed after enhancements have ben made or after patches to address vulnerabilities or problems have been issues
+    - Results of regression testing should be captured and communicated in a manner that is specific and relevant to the party reading the results– this is done using 'metrics that matter'
 
 
 
@@ -260,17 +261,17 @@ Misuse Testing
 
 ### Key Risk and Performance Indicators
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Key risk and performance indicators help inform goal setting, action planning, performance, and review, among other things
-- Key <u>performance</u> indicators (KPI) are **backward**-looking indicators and look at historical data for purposes of evaluating if performance targets were achieved
-- Key <u>risk</u> indicators (KRI) are **forward**-looking indicators and aid risk-related decision-making
-- SMART metrics are: 
-    - **Specific** - results clearly stated and easy to understand
-    - **Measurable** - results can be measured/have the data
-    - **Achievable** - Results can drive desired outcomes
-    - **Relevant** - Aligned to business strategy 
-    - **Timely** - Results available when needed
+    - Key risk and performance indicators help inform goal setting, action planning, performance, and review, among other things
+    - Key <u>performance</u> indicators (KPI) are **backward**-looking indicators and look at historical data for purposes of evaluating if performance targets were achieved
+    - Key <u>risk</u> indicators (KRI) are **forward**-looking indicators and aid risk-related decision-making
+    - SMART metrics are: 
+        - **Specific** - results clearly stated and easy to understand
+        - **Measurable** - results can be measured/have the data
+        - **Achievable** - Results can drive desired outcomes
+        - **Relevant** - Aligned to business strategy 
+        - **Timely** - Results available when needed
 
 
 
@@ -279,15 +280,15 @@ Misuse Testing
 
 ### Test Output
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Results of security assessments and testing should include steps related to: 
-    - **Remediation**
-        - based upon assessments and testing, remediation steps for all identified vulnerabilities should be documented
-    - **Exception handling**
-        - if an identified vulnerability will not be remediated, this should be documented too, including the reason why. Example: perhaps remediation would be costly relative to the value of the asset.
-    - **Ethical disclosure**
-        - some identified vulnerabilities might be new discoveries and point to significant flaws/weaknesses in widley used software/hardware.
+    - Results of security assessments and testing should include steps related to: 
+        - **Remediation**
+            - based upon assessments and testing, remediation steps for all identified vulnerabilities should be documented
+        - **Exception handling**
+            - if an identified vulnerability will not be remediated, this should be documented too, including the reason why. Example: perhaps remediation would be costly relative to the value of the asset.
+        - **Ethical disclosure**
+            - some identified vulnerabilities might be new discoveries and point to significant flaws/weaknesses in widley used software/hardware.
 
 
 
@@ -295,15 +296,15 @@ Misuse Testing
 
 ### Audit Process
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- Audit approaches include:
-    - **Internal**
-        - Employees focused on organizational processes
-    - **External**
-        - Employees focusing on vendor processes 
-    - **Third-party:**
-        -  Independent auditors focusing on vendor processes
+    - Audit approaches include:
+        - **Internal**
+            - Employees focused on organizational processes
+        - **External**
+            - Employees focusing on vendor processes 
+        - **Third-party:**
+            -  Independent auditors focusing on vendor processes
 
 - Audit plans include: defining the audit objective, defining the audit scope, conducting the audit, refining the audit process
 
@@ -311,10 +312,10 @@ Misuse Testing
 
 ### System Organization Controls (SOC) Reports
 
-######Core Concepts: 
+!!! note "Core Concepts"
 
-- audit standards hve matured over the years from SAS70 - SSAE 16 - SSAE 18
-- ISAE 3402 is the international standard in assurance engagements and is quite similar to SSAE 16/18 standards with slight variations
+    - audit standards hve matured over the years from SAS70 - SSAE 16 - SSAE 18
+    - ISAE 3402 is the international standard in assurance engagements and is quite similar to SSAE 16/18 standards with slight variations
 
 
 
@@ -341,9 +342,9 @@ SOC audits are used to **build trust** between service organizations and their c
 
 ### Audit Roles and Responsibilities 
 
-######Core Concepts:
+!!! note "Core Concepts"
 
-- Audit roles include: 
+    - Audit roles include: 
 
   
 
