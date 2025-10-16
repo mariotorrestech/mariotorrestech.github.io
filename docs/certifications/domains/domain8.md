@@ -2,9 +2,9 @@
 
 # Software Development Security
 
-##### Overview:
+!!! note "Overview"
 
-_Application Security. Needs to be involved during an application's entire life cycle, not just at development._
+    Application Security needs to be involved during an application's entire life cycle, not just at development.
 
 ## Understand and integrate security in the software development life cycle (SDLC)
 
@@ -33,7 +33,7 @@ _Application Security. Needs to be involved during an application's entire life 
     - Methodologies can be combine to utilize the best features of each of them
     - Agile scrum masters understand how all team efforts fit together and can. therefore effectively and efficiently lead activities
 
-###### Be familiar with various development methodologies and key characteristics of each:
+**Be familiar with various development methodologies and key characteristics of each:**
 
 - **Waterfall**
     - Complete each phase of devlopments before flowing/waterfalling into the next phase
@@ -51,19 +51,19 @@ _Application Security. Needs to be involved during an application's entire life 
 - **Cleanroom**
     - Development process intended to produce software with a certifiable level of reliability by focusing on defect prevention
 
-###### Understand the different priorites of waterfall and agile methodologies
+**Understand the different priorites of waterfall and agile methodologies**
 
-- Agile appears to be several waterfalls back to back, known as sprints
+- Agile appear to be several waterfalls back to back, known as sprints
 
-###### Understand the role of a scrum master in agile devlopment
+**Understand the role of a scrum master in agile devlopment**
 
 ### Maturity Models
 
 !!! note "Core Concepts"
 
-    - Like development methodologies, maturity models also help improve the development process
+    Like development methodologies, maturity models also help improve the development process
 
-- Capability Maturity Model Integration (CMMI) is one of the most popular models and includes six levels of maturity
+Capability Maturity Model Integration (CMMI) is one of the most popular models and includes six levels of maturity
 
   - Level 0: **Incomplete**
       - This phase is <u>unknown and ad hoc</u>
@@ -84,9 +84,7 @@ _Application Security. Needs to be involved during an application's entire life 
       - This phase is <u>flexible and stable.</u>
       - The organization is focused on continually improving and it is able to pivot when change and opportunity present themselves. The stability of the organization allows it to innovate and be agile
 
-- Each level of maturity of the CMMI is defined by certain characteristics
-
-###### SAMM
+Each level of maturity of the CMMI is defined
 
 1. Initial Implementation
 2. Structured Implemetation
@@ -116,7 +114,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
     - Obfuscation refers to hiding or obscuring something; code obfuscation refers to hiding or obscuring code to protect it from unauthorized viewing or interpretation of the logic
 
-- Three primary types of code obfuscation
+Three primary types of code obfuscation
 
   - **Lexical**
     - Modifies the look of the code (changing comments, removing debugging info, format of code)
@@ -134,11 +132,11 @@ _Application Security. Needs to be involved during an application's entire life 
     - Database terms: cols/fields = attributes; records/rows = tuples
     - Foundation of a relational database is the concept of primary and foreign keys
       - **Primary keys:**
-        - one ore more cols whos value uniquely identify a tuple (row) within a relational database
+        - One or more cols whos value uniquely identify a tuple (row) within a relational database
       - **Foreign keys:**
-        - one or more cols whose values in a table refer to the primary key in another table
+        - One or more cols whose values in a table refer to the primary key in another table
       - **Concurrency**
-        - abiity for multiple processes to access or change shared data at the same time
+        - Abiity for multiple processes to access or change shared data at the same time
       - Locks prevent data corruption when multiple users try to Write to the database simultaneously
       - ACID: Atomicity, Consistency, Isolation, Durability
 
@@ -146,7 +144,7 @@ _Application Security. Needs to be involved during an application's entire life 
 
 !!! note "Core Concepts"
 
-    - Data about other data
+    Data about other data
 
 ### Development Ecosystems
 
@@ -162,7 +160,7 @@ _Application Security. Needs to be involved during an application's entire life 
 !!! note "Core Concepts"
 
     - Software security effectiveness can be determined through auditing and logging of changes and risk analysis and mitigation, among other methods
-    - Review domain 6 for more details
+    - Review [domain 6](./domain6.md) for more details
 
 ## Assess security impact of acquired software
 
@@ -228,6 +226,5 @@ _Application Security. Needs to be involved during an application's entire life 
     - Between-the-lines attack = attacker intercepts/modifies communication between devices/people over a network; also known as a man-in-the-middle attack
 
 ---
-
 
 [RETURN to CISSP home](../cissp.md)
