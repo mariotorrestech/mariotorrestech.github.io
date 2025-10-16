@@ -19,12 +19,12 @@ It is important that the Preamble and the Code of Professional Ethics Canons be 
 - The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior
 - Therefore, strict adherence to this Code is a condition of certification
 
-**Wording and order of the ISC2 Code Of Ethics Canons**
+!!! quote "**Wording and order of the ISC2 Code Of Ethics Canons**"
 
-1. Protect society, the common good, necessary public trust and confidence, and the infrastructure
-2. Act honorably, honestly, justly, responsibly, and legally
-3. Provide diligent and competent service to principals
-4. Advance and protect the profession
+    1. Protect society, the common good, necessary public trust and confidence, and the infrastructure
+    2. Act honorably, honestly, justly, responsibly, and legally
+    3. Provide diligent and competent service to principals
+    4. Advance and protect the profession
 
 **How to apply Canons in various scenarios and contexts**
 
@@ -56,11 +56,11 @@ In summary, the focus of the security function is to:
 
     **Five Pillars of Information Security**
 
-      - Confidentiality: protects and prevents unauthorized disclosure
-    - Integrity: Protects and adds value to assets by making them more accurate, more timely, more current, more meaningful
-    - Availability: Ensures organizational assets are available when required by stakeholders
-    - Authenticity: Proves the source and origin of important valuable assets (proof of origin)
-    - Nonrepudiation: Provides assurance that someone cannot deny having done something
+    - **Confidentiality**: protects and prevents unauthorized disclosure
+    - **Integrity**: Protects and adds value to assets by making them more accurate, more timely, more current, more meaningful
+    - **Availability**: Ensures organizational assets are available when required by stakeholders
+    - **Authenticity**: Proves the source and origin of important valuable assets (proof of origin)
+    - **Nonrepudiation**: Provides assurance that someone cannot deny having done something
 
 ## Evaluate, apply, and sustance security goevernance principles
 
@@ -114,8 +114,7 @@ Security needs to be an integral part of all organization processes.
     - The role of security is to be an enabler
     - The owner/controller is the person that created, bought, or is most familiar with an asset
     - The processor is the person, function, or group responsible for data and who do things on behalf of the controller
-
-Custodians are basically repsonsible for an assset which they may not necessarily be the owners of
+    - Custodians are basically repsonsible for an assset which they may not necessarily be the owners of
 
 **Who is specifically responsible for security? Everyone**
 
@@ -212,11 +211,11 @@ Personal data can be referred to as:
 
 **Direct identifiers:**
 
-- information that relates specifically to an individual: name, address, ID
+- Information that relates specifically to an individual: name, address, ID
 
 **Indirect identifiers:**
 
-- information that cannot be used on it's own to uniquely ID an individual
+- Information that cannot be used on it's own to uniquely ID an individual
 
 **Privacy Requirements**
 
@@ -254,13 +253,13 @@ Why is this important?
 
 !!! note "Core Concepts"
 
-    - **Policies** = corporate laws
-    - Policies document and communicate management's goals and objectives
-    - Overarching security policy must come from upper management (tone from the top)
-    - **Procedures** = Step-by-step instructions
-    - **Standards** = Specific information related to solutions
-    - **Baselines** = Defined minimal implementation levels
-    - **Guidelines** = Recommendations or suggestions
+    - **Policies**: Corporate laws
+        - Policies document and communicate management's goals and objectives
+        - Overarching security policy must come from upper management (tone from the top)
+    - **Procedures**:  Step-by-step instructions
+    - **Standards**:  Specific information related to solutions
+    - **Baselines**:  Defined minimal implementation levels
+    - **Guidelines**:  Recommendations or suggestions
 
 ## Identify, analyze, and prioritize business continuity (BC) requirements
 
@@ -290,31 +289,31 @@ Why is this important?
 
 1. #### Value
 
-   - The first step is identifying the asssets of the organization and ranking those assets from most/least vulnerable
-     - **Quantitative** value analysis
-     - **Qualitative** value analysis
+       - The first step is identifying the asssets of the organization and ranking those assets from most/least vulnerable
+         - **Quantitative** value analysis
+         - **Qualitative** value analysis
 
 2. #### Risk Analysis
 
-   - Determine the risks associated with each asset
+       - Determine the risks associated with each asset
 
-     - Four key components that must be identified
+       - Four key components that must be identified
 
-       1. **Threat**
-          - Any potential danger to an asset
+           1. **Threat**
+              - Any potential danger to an asset
 
-       2. **Vulnerability**
-          - Any weakness that exists that could be exploited
+           2. **Vulnerability**
+              - Any weakness that exists that could be exploited
 
-       3. **Impact**
-          - The extent to which an asset would be negatively affected
+           3. **Impact**
+              - The extent to which an asset would be negatively affected
 
-       4. **Probability/Likelihood**
-          - The chance that a risk might materialize due to a given threat or vulnerability being present
+           4. **Probability/Likelihood**
+              - The chance that a risk might materialize due to a given threat or vulnerability being present
 
 3. #### Treatment
 
-   - Once identified, risks must be dealt with (treated), and there are four treatment methods
+       - Once identified, risks must be dealt with (treated), and there are four treatment methods
      1. **Avoid**
         - Dont do whatever the risky thing is
      2. **Transfer**
@@ -349,9 +348,9 @@ Why is this important?
 
 Three main components to a risk being present:
 
-- Asset: anything of value to the organization
-- Threat: any potential danger
-- Vulnerability: a weakness that exists
+- **Asset**: anything of value to the organization
+- **Threat**: any potential danger
+- **Vulnerability**: a weakness that exists
 
 ### Annualized Loss Expectancy (ALE) Calculation
 
@@ -405,9 +404,9 @@ Three main components to a risk being present:
 
 !!! note "Core Concepts"
 
-    - Safeguards = proactive - before the fact
-    - Countermeasures = reactive - after the fact
-    - Categories of controls : admin, physical, and logical/technical
+    - **Safeguards**: proactive - before the fact
+    - **Countermeasures**: reactive - after the fact
+    - **Categories of controls**: admin, physical, and logical/technical
 
 ### Functional and Assurance
 
@@ -415,8 +414,8 @@ Three main components to a risk being present:
 
     A good security control should always include two aspects:
 
-    - **Functional** = control must do what it is designed to do
-    - **Assurance** = control can be evaluated to confirm working correctly - provides proof/confidence
+    - **Functional**: Control must do what it is designed to do
+    - **Assurance**: Control can be evaluated to confirm working correctly - provides proof/confidence
 
 ### Selecting Controls
 

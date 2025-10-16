@@ -22,15 +22,15 @@
 
     - Regardless of the framework, model, or methodology used, the risk management process should be used to identify the most valuable assets and risks to those assets, and to determine appropriate and cost-effective security controls to implement this.
 
-##### Secure Defaults
+**Secure Defaults**
 
 - Any default settings a system has should be secured to the extent possible, so no compromise is facilitated.
 
-##### Fail Securely
+**Fail Securely**
 
 - If a system or components fail, they should do so in a manner that doesn't expose the system to a potential attack. Example: a lock should remain engaged if electricity fails at the building.
 
-##### Keep It Simple and Small
+**Keep It Simple and Small**
 
 - Remove as much complexity from a situation as possible and focus on what matters most.
 
@@ -42,7 +42,7 @@
 
   - Easier and more efficient troubleshooting and problem resolution
 
-##### Zero Trust and Trust but Verify
+**Zero Trust and Trust but Verify**
 
 Instead, authentication/authorization required before granting access to systems/individuals
 
@@ -51,7 +51,7 @@ Instead, authentication/authorization required before granting access to systems
 
 TRUST NOTHING and is based upon the premise that organizations should not automatically trust anything internal or external to enter their perimeter.
 
-##### Privacy by Design
+**Privacy by Design**
 
 - Premised on the belief that privacy should be incorporated into networked systems and technologies by default and designed into the architecture
 
@@ -63,26 +63,26 @@ TRUST NOTHING and is based upon the premise that organizations should not automa
 6. Visibility and Transparency
 7. Respect for User Privacy
 
-##### Shared Responsibility
+**Shared Responsibility**
 
 - Cloud/third-parties are partly responsible
 
-##### Cyber Kill Chain
+**Cyber Kill Chain**
 
 - **Recon**
-  - Involves identifying a target and looking for information that will be useful
+    - Involves identifying a target and looking for information that will be useful
 - **Weaponization**
-  - Involves building an exploit that aims to take advantage of any vulnerabilities identified in the recon step
+    - Involves building an exploit that aims to take advantage of any vulnerabilities identified in the recon step
 - **Delivery**
-  - Involves the attacker launching their attack
+    - Involves the attacker launching their attack
 - **Exploitation**
-  - The attacker executes their malicious code on the target's systems
+    - The attacker executes their malicious code on the target's systems
 - **Installation**
-  - Comes immediately after exploitation, and the attacker not has software installed 0n the target's systems
+    - Comes immediately after exploitation, and the attacker not has software installed 0n the target's systems
 - **Command** **and** **Control**
-  - Allows the attacker to remotely control their malware running within their target's systems
+    - Allows the attacker to remotely control their malware running within their target's systems
 - **Actions**
-  - The attacker carries out their initial objective
+    - The attacker carries out their initial objective
 
 ## Understand the fundamental concepts of security models
 
@@ -93,11 +93,11 @@ TRUST NOTHING and is based upon the premise that organizations should not automa
     - A model is a representation of something real
     - A security model is a representation of what security should look like in an architecture
 
-###### Concept of Security
+!!! info "Concept of Security"
 
-Bottom line: to ensure protection of any architecture, it must be broken down into individual components, and adequate security for each component needs to be put in place.
+    **Bottom line**: to ensure protection of any architecture, it must be broken down into individual components, and adequate security for each component needs to be put in place.
 
-The chain is only as strong as it's weakest link
+    The chain is only as strong as it's weakest link
 
 ### Enterprise Security Architecture
 
@@ -106,7 +106,7 @@ The chain is only as strong as it's weakest link
     - An architecture is a group of components that work together
     - Security architecture involves breaking down a system to its components and protecting each component based upon its value
 
-###### Security Models
+**Security Models**
 
 - Essentially, they're rules that need to be implemented to achieve security
 - Two types exist: Layer/Lattice based models and rule-based models
@@ -120,45 +120,46 @@ The chain is only as strong as it's weakest link
         - Biba addresses only integrity
         - Lipner implementation is not a model, it is an implementation that combines the best features of Bell-LaPadula and Biba
 
-#### Bell LaPadula
+!!! abstract "Bell LaPadula"
 
-Addresses only confidentiality
+    *Addresses only confidentiality*
 
-Based on three basic principles:
+    Based on three basic principles:
 
-1. **Simple security property**, aka – '**no read up**' property.
+    1. **Simple security property**, aka – '**no read up**' property.
 
-     - Relates to reading and denotes that any subject at a particular security level may not read an object at a higher level.
+         - Relates to reading and denotes that any subject at a particular security level may not read an object at a higher level.
 
-2. The **star (*) property**, aka – "**no write down**" property
+    2. The **star (*) property**, aka – "**no write down**" property
 
-     - relates to writing and denotes that any subject at a particular level may not write at a lower level
+         - Relates to writing and denotes that any subject at a particular level may not write at a lower level
 
-3. The **strong star** property relates to both r/w.
+    3. The **strong star** property relates to both r/w.
 
-     - Having an ability to both r/w means a subject should be able to r/w at their own layer, nothing higher or lower.
+         - Having an ability to both r/w means a subject should be able to r/w at their own layer, nothing higher or lower.
 
-#### Biba
+      CAN: Read down, Write up
 
-Bieba == RuWd (Rude)
+!!! abstract "Biba"
 
-- Read up, write down
-- Focuses on ensuring data integrity only
+    *Addresses only integrity*
 
-Also based on three basic principles:
+      Also based on three basic principles:
 
-1. **Simple integrity property**
-     - "No read down" relates to reading and denotes that a subject at a particular level may not read an object at lower integrity level
-2. **Star (*) integrity property**
-     - "No write up": relates to writing and denotes that a subject at a particular level of integrity may not write to an object at a higher integrity level
-3. **Invocation property**
-     - A subject can't send information to someone that is rated at a higher layer of information than the current one the subject holds
+    1. **Simple integrity property**
+         - "No read down" relates to reading and denotes that a subject at a particular level may not read an object at lower integrity level
+    2. **Star (*) integrity property**
+         - "No write up": relates to writing and denotes that a subject at a particular level of integrity may not write to an object at a higher integrity level
+    3. **Invocation property**
+         - A subject can't send information to someone that is rated at a higher layer of information than the current one the subject holds
 
-_BELL LAPADULA IS FOR **CONFIDENTIALITY**_
+      __Memory trick__: Bieber == RuWd (Rude)
 
-_I IN BIBA IS FOR **INTEGRITY**_
+     CAN: Read up, Write down
 
-###### Lipner Implementation
+!!! warning "BELL LAPADULA IS FOR **CONFIDENTIALITY**    |     BIBA IS FOR **INTEGRITY**"
+
+**Lipner Implementation**
 
 - Not a model, an implementation that takes the both of the above
 - Confidentiality and Integrity
@@ -205,16 +206,16 @@ Covert channels are unintentional & may involve storage or timing; when they exi
 
     3. Maintain consistency of the system
 
-##### Well-formed transactions:
+**Well-formed transactions:**
 
 - Good, consistent validated data
 - Only perform operations in a manner that won't compromise in the integrity of objects
 
-##### Separation of duties
+**Separation of duties**
 
 - One person shouldn't be allowed to perform all tasks related to a critical function
 
-##### Access Triple
+**Access Triple**
 
 - Subject | Program | Object
 - A subject cannot directly access an object, ie. In a database
@@ -233,9 +234,9 @@ Between Dev and Prod departments in an organization, as the 2 departments should
 Like Ball-LaPadula, Brewer-Nash primarily addresses issues related to _**confidentiality**_
 
 
-###### Graham-Denning Model
+**Graham-Denning Model**
 
-###### Harrison-Ruzzo-Ullman Model
+**Harrison-Ruzzo-Ullman Model**
 
 ### Certification and Accreditation
 
@@ -289,7 +290,7 @@ Unlike the orange book, ITSEC measures more than confidentiality. It works well 
     - Compromised of a multiple components that work together and alllow a globally recognized rating to be assigned to products
     - Common Criteria EAL rating levels
 
-###### Common Criteria Process
+**Common Criteria Process**
 
 1. The <u>first component</u> is the **Protection Profile (PP)**
 
@@ -329,12 +330,12 @@ The **evaluation** process is part of the CC that creates meaningful documentati
 6. Semi-formally verified, designed, and tested
 7. Formally verified, designed, and tested
 
-###### The potential negative implications if a product is rated too high
+**The potential negative implications if a product is rated too high**
 
 - Could be too secure and require extensive configuration, admin skills, maintenance. Could leave org at greater risk if consumers dont use the feature. IE it's too annoying to use.
 - Functional and security must be balanced.
 
-###### If a product is patched or receives software/firmware updates, the EAL remains the same
+**If a product is patched or receives software/firmware updates, the EAL remains the same**
 
 - EAL remains through its lifespan, unless a major change in product functionality is introduced.
 
@@ -351,14 +352,14 @@ The **evaluation** process is part of the CC that creates meaningful documentati
 
 Control frameworks provide comprehensive guidance based upon best practices.
 
-###### Understand the major frameworks at a high level, especially ISO 27001/02, which is internationally recognized framework
+**Understand the major frameworks at a high level, especially ISO 27001/02, which is internationally recognized framework**
 
-- ##### COBIT
+**- COBIT**
 
       - Control objectives for IT framework is particularly useful for IT assurance, such as conducting audits and gap assessments
       - Created for IT governance, and therefore particularly useful for IT assurance activities
 
-- ##### ITIL
+**- ITIL**
 
       - Defines the processes a well run IT department
       - from the onboaording process, to procurement, change management, configuration management, and access control, etc.
@@ -435,12 +436,12 @@ Control frameworks provide comprehensive guidance based upon best practices.
           3. Verifiability
     - The term Trusted Computing Base (TCB) refers to all the protection mechanisms within an architecture; the TCB is the **totality** of protection mechanisms within an architecture
 
-##### Subjects and Objects
+**Subjects and Objects**
 
   - **Active** entities -- Person, process, or program that actively tries to access an object
   - **Passive** entities -- anything that is being passively accessed by a subject like a file, server, process
 
-##### Reference Monitor Concept (RMC)
+**Reference Monitor Concept (RMC)**
 
 RMC features include:
 
@@ -451,7 +452,7 @@ RMC features include:
 
 The implementation of the RMC is called the security kernel
 
-##### Security Kernel
+**Security Kernel**
 
 The **implementation** of the RMC. A viable security kernel should contain 3 properties:
 
@@ -574,7 +575,7 @@ In other words**, the actions of one object should not affect the state of other
     - Shielding, white noise, and control zones can prevent emanations from being captured
 
 **Single Point of Failure**
-###### Reduce Risk of single point of failure
+**Reduce Risk of single point of failure**
 
 - Implement redundancy
 
@@ -584,7 +585,7 @@ In other words**, the actions of one object should not affect the state of other
 - Example: needing access to admin settings of a home router, but you cant remember the password
   - Performing a factory reset of the device would allow me to enter new configuration details/credentials and set it up from scratch
 
-###### Reduce Risk of Bypass Controls
+**Reduce Risk of Bypass Controls**
 
 - Bypass controls are needed, and other compensating controls should always be implemented with them to mitigate or prevent their exploitation
 
@@ -596,7 +597,7 @@ In other words**, the actions of one object should not affect the state of other
     - In that short time period, something unintended or malicious can transpire
   - **AKA**: Race condition - a user or process attempts to 'race in' and make changes
 
-###### Reduce Race conditions
+**Reduce Race conditions**
 
   - Increase frequency of access checks, but not too often where it's annoying. Balance between security and functionality is important
 
@@ -643,7 +644,7 @@ In other words**, the actions of one object should not affect the state of other
 
 **Mobile Devices**
 
-###### Reduce Risk in Mobile-based Systems
+**Reduce Risk in Mobile-based Systems**
 
 **What is the primary different between MDM and MAM?**
 
@@ -707,7 +708,7 @@ What's an underlying risk to distributed file systems (DFS)?
   - **Inference**: deducing information from evidence and reasoning rather than from explicit statements
   - **Aggregation**: Collecting, gathering, or combining data for the purpose of statistical analysis
 
-###### Reduce the risk of unauthorized inference and aggregation
+**Reduce the risk of unauthorized inference and aggregation**
 
   - One method is 'polyinstantiation', which allows information to exist in different classification levels for the purpose of presenting unauthorized inference and aggregation (more details in Domain 8)
 
@@ -744,8 +745,8 @@ What's an underlying risk to distributed file systems (DFS)?
 
 ### Cloud Service and Deployment Models
 
-###### 
-
+**
+**
 !!! note "Core Concepts"
 
     ### Characteristics of cloud computing:
