@@ -4,7 +4,7 @@
 
 !!! Overview
 
-    The first CISSP domain focuses on the fundamentals of security and how to asses/manage risk.
+    The first CISSP domain focuses on the fundamentals of security and how to assess/manage risk.
 
     This domain also focuses heavily on the key factors of governance and compliance, and how security helps by being aligned and contributing to each.
 
@@ -35,7 +35,6 @@ The items should be memorized as presented. If there is a conflict in the Canons
 !!! note "Core Concepts"
 
     - Ethics are based on doing nothing that is harmful to anyone else
-
     - For organizations to have consistent ethics, they must be codified in corporate laws/policies
 
 ## Understand and apply security concepts
@@ -77,7 +76,6 @@ In summary, the focus of the security function is to:
 Security needs to enable the organization's values and objectives, not just information information processes or fix technical issues.
 
 **Aligning security governance with corporate governance**
-
 
 Security governance is best aligned with corporate governance when it draws on the knowledge and experience of senior and upper management, HR, Legal, IT, and key functional areas of the organization
 
@@ -143,7 +141,7 @@ Consider penetration testing as an example:
 
 ### Cybercrimes and Data Breaches
 
-_Bottom line: Don't be the low-hanging fruit that can be easily picked!_
+**Bottom line: Don't be the low-hanging fruit that can be easily picked!**
 
 ### Licensing and IP Requirements
 
@@ -373,7 +371,8 @@ Three main components to a risk being present:
 
 !!! note "Core Concepts"
 
-    - Risk can be managed via four approaches
+    - Risk can be managed via four approaches:
+        - Avoid, transfer, mitigate, accept
     - Risk can never be entirely eliminated
 
 ### Applicable Types of Controls
@@ -381,7 +380,7 @@ Three main components to a risk being present:
 !!! note "Core Concepts"
 
     - A complete control is a combination of of preventative, detective, and corrective controls
-    - In defense-in-depth (layered security)m a complete control should be implemented at each layer
+    - In defense-in-depth (layered security) a complete control should be implemented at each layer
 
 **Definitions and examples of the types of controls**
 
@@ -486,6 +485,9 @@ Understanding the RMF is critical, as it informs and underpins just about every 
 
 **STRIDE**
 
+*Threat focused methodology, less detailed than the following PASTA*
+
+
 | Threat                     | Violation       | Definition                                                                  |
 | -------------------------- | --------------- | --------------------------------------------------------------------------- |
 | S: Spoofing                | Authentication  | An attacker pretends to be something or someone to gain unauthorized access |
@@ -495,7 +497,11 @@ Understanding the RMF is critical, as it informs and underpins just about every 
 | D: Denial of Service (DoS) | Availability    | An attacker prevents legitimate users from accessing an application/service |
 | E: Elevation of Privilege  | Authorization   | An attacker gains elevated access rights                                    |
 
-**PASTA**
+**PASTA - Process for Attack Simulation and Threat Analysis**
+
+*Contrary to STRIDE, PASTA is attacker-focused/risk-centric*
+
+*Much more detailed and strategic - taking input from Governance, Operations, Development, and Architecture teams*
 
 | Stage                                  | Definition                                                                                                                                                                                                                                   |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -508,6 +514,8 @@ Understanding the RMF is critical, as it informs and underpins just about every 
 | 7: Risk and Impact Analysis            | This stage centers around remediating vulnerabilities or weaknesses in code or design that can facilititae threats and underlying attack patterns. It may warrant some risk acceptance by broader application owners or development managers |
 
 **DREAD**
+
+*Primarily used to rank threat severity. Often used in conjunction with STRIDE model*
 
 | Threat             | Definition                                                                           | Score |
 | ------------------ | ------------------------------------------------------------------------------------ | ----- |
@@ -526,13 +534,13 @@ Understanding the RMF is critical, as it informs and underpins just about every 
     - Social engineering is a prevalent means of attack
     - Best way to combat is through awareness/education/training
 
-It's prevalent because it's effective
+    *It's prevalent because it's effective*
 
 ## Apply supply chain risk management (SCRM) concepts
 
 !!! note "Core Concepts"
 
-    - Risk management methodologies shouldb be aplied to all vendors, suppliers, service providers
+    Risk management methodologies shouldb be aplied to all vendors, suppliers, service providers
 
 ### Risks associated with the acquisition of products and services from suppliers and provider
 
@@ -566,7 +574,7 @@ It's prevalent because it's effective
 - Governance
     - The customer and the service provider know who is responsible for what
 - Security
-      - Expected security controls put in place by the service provider that speak to the topic of accountabiltiy and responsibility
+    - Expected security controls put in place by the service provider that speak to the topic of accountabiltiy and responsibility
 - Compliance with all laws and regulations
 - Liability/indemnification when any element of the SLA is not met or below threshold
 
