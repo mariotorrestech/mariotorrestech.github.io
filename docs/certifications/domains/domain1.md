@@ -73,7 +73,7 @@ In summary, the focus of the security function is to:
     - Scoping and tailoring are used to align security objectives with organizational goals and objectives
     - Security governance must be aligned with corporate governance
 
-Security needs to enable the organization's values and objectives, not just information information processes or fix technical issues.
+Security needs to enable the organization's values and objectives, not just information processes or fix technical issues.
 
 **Aligning security governance with corporate governance**
 

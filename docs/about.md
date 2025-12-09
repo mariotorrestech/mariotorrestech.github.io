@@ -9,7 +9,7 @@ title: About
 ## Education
 
 - B.S. in **Information Systems** from the **University of North Texas**, Class of 2020
-- _IN PROGRESS_: [CISSP certification](certifications/cissp.md/) - _Studying CISSP domains and planning on testing before year end._
+- _IN PROGRESS_: [CISSP certification](certifications/cissp.md/) - _Studying CISSP domains and testing in December._
 
 ## Professional Experience
 
