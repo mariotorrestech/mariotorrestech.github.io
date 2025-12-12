@@ -33,7 +33,8 @@ hide:
 
     ---
 
-    Studying for CISSP Certification and testing this year. 
+    Studying for CISSP Certification and testing in December. 
+
 
     [:octicons-arrow-right-24: More details and published notes](certifications/cissp.md)
 
