@@ -17,7 +17,7 @@ hide:
 
     ---
 
-    5 years supporting and mainframe and IAM related issues at Fidelity Investments.
+    5 years supporting mainframe and IAM related issues at Fidelity Investments.
     
 
     [:octicons-arrow-right-24: Profession and Education](about/)
