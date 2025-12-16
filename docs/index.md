@@ -7,7 +7,7 @@ hide:
 
 # **Mario Torres**
 
-*[IT professional supporting IAM solutions](about/) at Fidelity Investments. Also building practical cybersecurity skills through hands-on labs and certifications*
+*[IT professional supporting mainframe and IAM solutions](about/) at Fidelity Investments. Also building practical cybersecurity skills through hands-on labs and certifications.*
 
 ## Quick Navigations
 
@@ -17,7 +17,7 @@ hide:
 
     ---
 
-    4+ years supporting and administering IAM related issues at Fidelity Investments.
+    5 years supporting and mainframe and IAM related issues at Fidelity Investments.
     
 
     [:octicons-arrow-right-24: Profession and Education](about/)
@@ -36,6 +36,6 @@ hide:
     Studying for CISSP Certification and testing in December. 
 
 
-    [:octicons-arrow-right-24: More details and published notes](certifications/cissp.md)
+    [:octicons-arrow-right-24: Details and notes](certifications/cissp.md)
 
 </div>

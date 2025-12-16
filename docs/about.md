@@ -4,7 +4,7 @@ title: About
 
 # Professional Overview:
 
-**IT professional with 4+ years of support and system administration experience in a highly regulated financial environment, focusing on IAM support and providing solutions across business units and services.**
+**IT professional with 5 years of mainframe support and system administration experience in a highly regulated financial environment, focusing on IAM support and solutions across business units and services.**
 
 ## Education
 
