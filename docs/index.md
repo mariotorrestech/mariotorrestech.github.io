@@ -33,9 +33,9 @@ hide:
 
     ---
 
-    Studying for CISSP Certification and testing in December. 
+    Passed the CISSP exam in January 2026. Endorsement in progress.
 
 
-    [:octicons-arrow-right-24: Details and notes](certifications/cissp.md)
+    [:octicons-arrow-right-24: Details](certifications/cissp.md)
 
 </div>

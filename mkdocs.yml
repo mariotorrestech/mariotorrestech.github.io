@@ -8,15 +8,7 @@ nav:
   - Home: index.md
   - About Me: about.md
   - Certifications:
-    - CISSP Overview: certifications/cissp.md
-    - Domain 1 - Asset Security: certifications/domains/domain1.md
-    - Domain 2 - Asset Security: certifications/domains/domain2.md
-    - Domain 3 - Security Engineering: certifications/domains/domain3.md
-    - Domain 4 - Communication and Network Security: certifications/domains/domain4.md
-    - Domain 5 - Identity and Access Management: certifications/domains/domain5.md
-    - Domain 6 - Security Assessment and Testing: certifications/domains/domain6.md
-    - Domain 7 - Security Operations: certifications/domains/domain7.md
-    - Domain 8 - Software Development Security: certifications/domains/domain8.md
+    - CISSP: certifications/cissp.md
     
   - Homelab:
       - Homelab Overview: homelab/index.md

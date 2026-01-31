@@ -2,22 +2,25 @@
 title: CISSP Certification
 ---
 
-# CISSP Certification (in progress)
+# CISSP Certification
 
-!!! note "Overview"
+**Status:** Passed (January 2026) - Endorsement in progress
 
-    I am scheduled to test for the CISSP [(ISC2)](https://www.isc2.org/certifications/cissp) exam later this December! My notes are posted below.
+I passed the CISSP exam and am currently completing the endorsement process to become officially certified by (ISC)².
 
-| Domain     | Section                            | Status                                                           |
-| ---------- | ---------------------------------- | ---------------------------------------------------------------- |
-| `Domain 1` | Security and Risk Management       | :material-progress-pencil: [Notes published](domains/domain1.md) |
-| `Domain 2` | Software Development Security      | :material-progress-pencil: [Notes published](domains/domain2.md) |
-| `Domain 3` | Security Engineering               | :material-progress-pencil: [Notes published](domains/domain3.md) |
-| `Domain 4` | Communication and Network Security | :material-progress-pencil: [Notes published](domains/domain4.md) |
-| `Domain 5` | Identity and Access Management     | :material-progress-pencil: [Notes published](domains/domain5.md) |
-| `Domain 6` | Security Asssement and Testing     | :material-progress-pencil: [Notes published](domains/domain6.md) |
-| `Domain 7` | Security Operation                 | :material-progress-pencil: [Notes published](domains/domain7.md) |
-| `Domain 8` | Software Development Security      | :material-progress-pencil: [Notes published](domains/domain8.md) |
+The CISSP covers eight domains of information security:
 
-_Return to [Home](../index.md)_ | _Return to [Homelab](../homelab/index.md)_
+1. Security and Risk Management
+2. Asset Security
+3. Security Architecture and Engineering
+4. Communication and Network Security
+5. Identity and Access Management (IAM)
+6. Security Assessment and Testing
+7. Security Operations
+8. Software Development Security
 
+Learn more about the certification at [(ISC)²](https://www.isc2.org/certifications/cissp).
+
+---
+
+_Return to [Home](../index.md)_ | _Return to [About](../about.md)_
