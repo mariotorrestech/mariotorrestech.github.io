@@ -11,12 +11,12 @@ nav:
     - CISSP: certifications/cissp.md
     
   - Homelab:
-      - Homelab Overview: homelab/index.md
+      - Overview: homelab/index.md
       - Pi-hole DNS: homelab/pihole.md
-      - Step-ca PKI: homelab/step-ca.md
       - Nginx Proxy Manager: homelab/npm.md
-      - AD Lab: homelab/activedirectory.md
-      - Web App Lab: homelab/webapplab.md
+      - Internal PKI: homelab/step-ca.md
+      - AD Pentest Lab: homelab/activedirectory.md
+      - Web App Security Lab: homelab/webapplab.md
 
 theme:
   name: material

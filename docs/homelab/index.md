@@ -4,51 +4,56 @@ title: Security Homelab
 
 # Security Learning Environment & Homelab
 
-# Infrastructure Overview
+## Infrastructure Overview
 
-![image](../assets/nuc8.jpg)
+![Intel NUC](../assets/nuc8.jpg)
 
-My lab is running on Proxmox, a baremetal hypervisor. The hardware is an Intel Hades Canyon NUC - born for gaming, now runs the lab. I have more info below on some of the technology behind this lab.
+My homelab runs on **Proxmox VE**, a bare-metal hypervisor, hosted on an Intel NUC. The environment is designed to mirror enterprise infrastructure patterns while providing a platform for security research and hands-on learning.
 
-### Tools & Technologies
+### Core Services
 
-- __Networking__:
-    - [Pi-hole](pihole.md) - DNS server and domain wide ad-blocking
-    - [NGINX Proxy Manager](npm.md) - Port forwarding and reverse proxy 
-    - [step-ca PKI](step-ca.md) - Certificate Authority server
+- **DNS & Ad Blocking**: [Pi-hole](pihole.md) for centralized DNS resolution and network-wide ad filtering
+- **Reverse Proxy**: [Nginx Proxy Manager](npm.md) for TLS termination and hostname-based routing
+- **Internal PKI**: Wildcard certificates via mkcert for HTTPS across all internal services
+- **Version Control**: Self-hosted Git server for configuration management
+- **Documentation**: Internal MkDocs site for runbooks and procedures
 
-- __Virtualization__:
-    - Proxmox VE
-- __Containerization__:
-    - Docker, Proxmox LXC
+### Security Labs
 
-### Current Learning Focus
+- **[Active Directory Lab](activedirectory.md)**: Vulnerable Windows domain for practicing penetration testing techniques
+- **[Web Application Lab](webapplab.md)**: OWASP Juice Shop for web security testing
 
-#### [Active Directory Lab](activedirectory.md)
-
-- Purpose: Hands-on experience with vulnerable Windows domain controller and machines. Practicing various penetration techniques such as Kerberoasting, Pass-the-hash, and more.
-
-#### [Web Application Security Lab](webapplab.md)
-
-- OWASP Juice Shop hosted on the Kali Linux attack platform hosted on the Kali Linux attack platform.
-- Emphasis on testing methodology and documentation
-
-## Environment Overview
-
-### Network Topology
+## Architecture
 
 ```mermaid
 graph TD
-    INTERNET((Internet)) --> ROUTER[UniFi Gateway]
-    ROUTER --> FW{Firewall Rules}
-    FW --> PROD[Production VLAN]
-    FW --> ADMIN[Admin VLAN]
-    FW --> LAB[Testing Lab VLAN]
-    
-    PROD --> CORE[Core Services]
-    ADMIN --> MGMT[Management Interface]
-    LAB --> ADLAB[AD Security Lab]
-    LAB --> WEBLAB[Web Security Lab]
+    INTERNET((Internet)) --> ROUTER[Gateway/Firewall]
+    ROUTER --> SWITCH[Network Switch]
+    SWITCH --> PROXMOX[Proxmox Hypervisor]
+
+    PROXMOX --> DNS[Pi-hole DNS]
+    PROXMOX --> PROXY[Nginx Proxy Manager]
+    PROXMOX --> SERVICES[Internal Services]
+
+    subgraph Lab Environment
+        ADLAB[AD Security Lab]
+        WEBLAB[Web Security Lab]
+    end
+
+    PROXMOX --> ADLAB
+    PROXMOX --> WEBLAB
 ```
+
+## Skills Demonstrated
+
+| Area | Technologies |
+|------|--------------|
+| **Virtualization** | Proxmox VE, LXC containers, QEMU/KVM |
+| **Networking** | DNS management, reverse proxy, VLAN segmentation |
+| **PKI/TLS** | Certificate authority, wildcard certs, TLS termination |
+| **Security Testing** | Active Directory attacks, web application security |
+| **Infrastructure as Code** | Git-based configuration management |
+
+---
 
 _Return to [Home](../index.md)_

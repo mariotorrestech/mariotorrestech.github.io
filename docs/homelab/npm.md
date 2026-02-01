@@ -1,94 +1,63 @@
+---
+title: Nginx Proxy Manager
+---
+
 # Nginx Proxy Manager (Reverse Proxy)
 
-!!! abstract "BLUF"
-    **What I built:** A central reverse proxy (Nginx Proxy Manager) to front-end all homelab services over HTTPS.  
-    **Why it mattered:** Consolidates ingress, simplifies routing by hostname, and terminates TLS in one place using certificates from my Step-CA.  
-    **Outcome:** Clean `https://<service>.lab` access for all apps, with consistent security policies and a single pane for certificate and proxy management.
+## Overview
 
----
+Nginx Proxy Manager serves as the central ingress point for all homelab services, providing TLS termination and hostname-based routing through a web-based management interface.
 
-## Context & Goals
+## What I Built
 
-- Replace per-service ports (e.g., `:3000`, `:8080`) with stable HTTPS hostnames.
-- Terminate TLS at the edge (NPM) using certs issued by my **Step-CA**.
-- Keep everything internal (LAN/Tailscale), no WAN exposure.
+- **Centralized ingress**: All internal services accessed via `https://<service>.lab`
+- **TLS termination**: Wildcard certificate handles HTTPS for all services
+- **Simplified management**: Web UI for proxy host configuration without manual nginx configs
 
----
+## Architecture
 
-## Design & Decisions
+```mermaid
+graph LR
+    BROWSER[Browser] -->|HTTPS| NPM[Nginx Proxy Manager]
+    NPM -->|TLS Termination| NPM
+    NPM -->|HTTP Forward| BACKEND[Backend Services]
 
-- **Ingress consolidation:** NPM terminates TLS and routes to backends on the internal network.
-- **Certificates:** Issued from **Step-CA** (manual) → imported to NPM as custom certificates.
-- **DNS:** Pi-hole provides A/CNAME records for `*.lab` pointing to the NPM address.
-- **Security posture:** Only reachable on LAN/Tailscale; no WAN port-forwarding. IP allowlists can be applied in NPM if needed.
+    subgraph Backends
+        DOCS[Documentation]
+        GIT[Git Server]
+        DNS[Pi-hole Admin]
+        HYPERVISOR[Proxmox]
+    end
 
----
-
-## Implementation
-
-### Install
-
-```bash
-# Proxmox community script (LXC)
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/nginxproxymanager.sh)"
+    NPM --> DOCS
+    NPM --> GIT
+    NPM --> DNS
+    NPM --> HYPERVISOR
 ```
 
-### Certificates (Step-CA → NPM)
+## Key Decisions
 
-Issue leaf certs per host with Step-CA (manual workflow):
+- **Internal-only access**: No WAN exposure; accessible only on LAN
+- **Wildcard certificate**: Single cert covers all `.lab` subdomains via mkcert
+- **Backend flexibility**: Services run on HTTP internally; NPM handles all encryption
 
-```bash
-# Example: issue cert for grafana.home.lab
-step ca certificate "grafana.home.lab" grafana.crt grafana.key
-```
+## Proxy Host Configuration
 
-Import into NPM:
+Each service configured with:
 
-- NPM UI → **SSL Certificates** → **Add** → **Custom**
-- Paste/upload `grafana.crt` and `grafana.key`
-- Save and name the certificate clearly (e.g., `grafana.home.lab (step-ca)`)
+- Hostname-based routing
+- SSL certificate assignment
+- Force SSL and HSTS
+- WebSocket support where needed (Git, real-time services)
+- Common exploit blocking
 
-<!-- PATHS PLACEHOLDER -->
-*(If storing certs on disk for NPM to mount/reference, document your paths here.)*
+## Skills Demonstrated
 
-### Add Proxy Hosts
-
-For each app:
-
-1. **Hosts → Proxy Hosts → Add Proxy Host**
-2. **Domain Names:** `npm.lab`  
-3. **Scheme:** `http` (or `https` if backend does TLS)  
-4. **Forward Hostname / IP:** `10.10.10.<backend-ip>`  
-5. **Forward Port:** `<backend-port>`  
-6. **Block Common Exploits:** enabled  
-7. **Websockets Support:** enable if the app needs it  
-8. **SSL Tab:** Select your Step-CA certificate  
-9. **Force SSL:** enabled (if appropriate)  
-10. Save
-
-Repeat for your core set:
-
-- `npm.lab` → `10.10.10.165:81` (optional convenience)
-- `proxmox.lab` → `10.10.10.<pve-ip>:8006`
-- `pihole.lab` → `10.10.10.31:80`
-- etc.
+- Reverse proxy design and implementation
+- TLS termination architecture
+- Certificate management
+- Secure internal ingress patterns
 
 ---
 
-## Pitfalls & Fixes
-
-- **Browser trust warnings**: root CA not installed on client.  
-  *Fix:* Import Step-CA root into OS/browser trust stores.
-
-- **502/504 after enabling Websockets app**: forgot to enable “Websockets Support”.  
-  *Fix:* Toggle in the Proxy Host → Options.
-
----
-
-## Reflection
-
-- **Skills demonstrated**: reverse proxy design, TLS termination with internal CA, DNS mapping, and secure internal ingress patterns.
-- **Next steps**:
-     - Script certificate rotation
-     - Add Access Lists (per-service auth)
-     - Feed NPM logs into SIEM for visibility
+_Return to [Homelab Overview](index.md)_
