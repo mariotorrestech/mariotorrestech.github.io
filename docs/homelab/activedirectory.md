@@ -6,7 +6,7 @@ title: Active Directory Lab
 
 ## Overview
 
-An isolated Active Directory environment with intentional misconfigurations for practicing offensive security techniques. The lab provides hands-on experience with real-world AD attack vectors in a safe, controlled setting.
+I built an isolated Active Directory environment with intentional misconfigurations for practicing offensive security techniques. The lab provided hands-on experience with real-world AD attack vectors in a safe, controlled setting.
 
 ## What I Built
 

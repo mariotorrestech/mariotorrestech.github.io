@@ -9,7 +9,6 @@ title: About
 ## Education
 
 - B.S. in **Information Systems** from the **University of North Texas**, Class of 2020
-- [CISSP](certifications/cissp.md) - _Passed January 2026, endorsement in progress_
 
 ## Professional Experience
 

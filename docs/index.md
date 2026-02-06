@@ -29,13 +29,4 @@ hide:
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
--   :material-abacus:{ .lg .middle } __CISSP__
-
-    ---
-
-    Passed the CISSP exam in January 2026. Endorsement in progress.
-
-
-    [:octicons-arrow-right-24: Details](certifications/cissp.md)
-
 </div>

@@ -6,7 +6,7 @@ title: Web Application Lab
 
 ## Overview
 
-OWASP Juice Shop deployed as a vulnerable web application for practicing security testing. The lab provides hands-on experience with OWASP Top 10 vulnerabilities using industry-standard tools and methodologies.
+I deployed OWASP Juice Shop as a vulnerable web application for practicing security testing. The lab provided hands-on experience with OWASP Top 10 vulnerabilities using industry-standard tools and methodologies.
 
 ## What I Built
 

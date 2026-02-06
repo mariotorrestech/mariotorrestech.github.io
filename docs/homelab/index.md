@@ -20,7 +20,7 @@ My homelab runs on **Proxmox VE**, a bare-metal hypervisor, hosted on an Intel N
 
 ### Security Labs
 
-- **[Active Directory Lab](activedirectory.md)**: Vulnerable Windows domain for practicing penetration testing techniques
+- **[Active Directory Lab](activedirectory.md)**: Vulnerable Windows domain used for practicing penetration testing techniques
 - **[Web Application Lab](webapplab.md)**: OWASP Juice Shop for web security testing
 
 ## Architecture

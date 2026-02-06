@@ -7,14 +7,11 @@ site_dir: site
 nav:
   - Home: index.md
   - About Me: about.md
-  - Certifications:
-    - CISSP: certifications/cissp.md
-    
   - Homelab:
       - Overview: homelab/index.md
       - Pi-hole DNS: homelab/pihole.md
       - Nginx Proxy Manager: homelab/npm.md
-      - Internal PKI: homelab/step-ca.md
+      - Internal PKI: homelab/pki.md
       - AD Pentest Lab: homelab/activedirectory.md
       - Web App Security Lab: homelab/webapplab.md
 
