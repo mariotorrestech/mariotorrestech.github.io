@@ -18,9 +18,7 @@ Nginx Proxy Manager serves as the central ingress point for all homelab services
 
 ```mermaid
 graph LR
-    BROWSER[Browser] -->|HTTPS| NPM[Nginx Proxy Manager]
-    NPM -->|TLS Termination| NPM
-    NPM -->|HTTP Forward| BACKEND[Backend Services]
+    BROWSER[Browser] -->|HTTPS| NPM[Nginx Proxy Manager<br/>TLS Termination]
 
     subgraph Backends
         DOCS[Documentation]
@@ -29,10 +27,10 @@ graph LR
         HYPERVISOR[Proxmox]
     end
 
-    NPM --> DOCS
-    NPM --> GIT
-    NPM --> DNS
-    NPM --> HYPERVISOR
+    NPM -->|HTTP| DOCS
+    NPM -->|HTTP| GIT
+    NPM -->|HTTP| DNS
+    NPM -->|HTTP| HYPERVISOR
 ```
 
 ## Key Decisions

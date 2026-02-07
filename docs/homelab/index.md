@@ -33,10 +33,8 @@ graph TD
 
     PROXMOX --> DNS[Pi-hole DNS]
     PROXMOX --> PROXY[Nginx Proxy Manager]
-    PROXMOX --> SERVICES[Internal Services]
 
     DNS -.->|resolves to| PROXY
-    PROXY -->|proxies to| SERVICES
 
     subgraph Lab Environment
         ADLAB[AD Security Lab]

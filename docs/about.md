@@ -12,9 +12,9 @@ title: About
 
 ## Professional Experience
 
-#### IT Support Associate
+#### IT Support Associate — Fidelity Investments
 
-###### Fidelity Investments | December 2020 - Present
+December 2020 - Present
 
 - Provide remote support for a 70,000-user environment in the financial services sector
 - Details included in resumé - request a copy using the buttons below! Feel free to check out the rest of my site for more on my [homelab](homelab/index.md)!
