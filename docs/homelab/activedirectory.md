@@ -83,4 +83,11 @@ graph TD
 
 ---
 
+## Resources
+
+- [PimpmyADLab Build Script](https://github.com/Dewalt-arch/pimpmyadlab?tab=readme-ov-file)
+- [Practical Ethical Hacking from TCM Security](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course)
+
+---
+
 _Return to [Homelab Overview](index.md)_
