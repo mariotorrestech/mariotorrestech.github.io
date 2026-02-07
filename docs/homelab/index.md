@@ -35,6 +35,8 @@ graph TD
     PROXMOX --> PROXY[Nginx Proxy Manager]
     PROXMOX --> SERVICES[Internal Services]
 
+    DNS --> PROXY --> SERVICES
+
     subgraph Lab Environment
         ADLAB[AD Security Lab]
         WEBLAB[Web Security Lab]
