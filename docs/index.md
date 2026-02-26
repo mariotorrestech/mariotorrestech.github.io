@@ -30,6 +30,8 @@ hide:
 
     [:octicons-arrow-right-24: View certifications](certifications/)
 
+    ![CISSP Badge](assets/certified-information-systems-security-professional-cissp.png){ width="80" }
+
 -   :material-server-network:{ .lg .middle } __Homelab__
 
     ---
