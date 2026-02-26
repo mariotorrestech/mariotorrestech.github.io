@@ -4,7 +4,7 @@ title: About
 
 # Professional Overview:
 
-**IT professional with 5 years of mainframe support and system administration experience in a highly regulated financial environment, focusing on IAM support and solutions across business units and services.**
+**CISSP-certified IT professional with 5 years of experience supporting identity and access management in a highly regulated financial environment, serving 70,000 users across enterprise platforms and business units.**
 
 ## Education
 
@@ -12,12 +12,19 @@ title: About
 
 ## Professional Experience
 
-#### IT Support Associate — Fidelity Investments
+#### IT Support Technician — Fidelity Investments
 
 December 2020 - Present
 
-- Provide remote support for a 70,000-user environment in the financial services sector
-- Details included in resumé - request a copy using the buttons below! Feel free to check out the rest of my site for more on my [homelab](homelab/index.md)!
+- Support 70,000+ users across enterprise identity, access, and security platforms in a regulated financial services environment
+- Work daily across CyberArk, Azure AD/Entra, Microsoft Intune, Zscaler, BeyondTrust, Delinea EPM, and Broadcom Top Secret (mainframe IAM)
+- Investigate access and authentication issues using Splunk dashboards, TSS MARS reports, and cross-platform troubleshooting
+- Coordinate incident remediation including access revocation, restoration, and account verification during security events
+- Maintain 98% contact compliance score while managing high-volume support across multiple business units
+- Document resolution patterns in ServiceNow and JIRA to improve triage workflows and build institutional knowledge
+- Train and onboard new hires on access workflows, identity verification, and compliance procedures
+
+Also building hands-on security skills through a personal [homelab](homelab/index.md) running Proxmox, Pi-hole, internal PKI, and security labs.
 
 ## Let's Connect!
 

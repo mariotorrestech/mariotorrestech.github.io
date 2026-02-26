@@ -7,7 +7,7 @@ hide:
 
 # **Mario Torres**
 
-*[IT professional supporting mainframe and IAM solutions](about/) at Fidelity Investments. Also building practical cybersecurity skills through hands-on labs and certifications.*
+*[CISSP-certified IT professional](about/) supporting identity and access management across 70,000 users at Fidelity Investments. Hands-on security skills built through enterprise support and a personal [homelab](homelab/index.md).*
 
 ## Quick Navigations
 
@@ -17,15 +17,23 @@ hide:
 
     ---
 
-    5 years supporting mainframe and IAM related issues at Fidelity Investments.
-    
+    5 years supporting identity and access management at Fidelity Investments. Building security skills through hands-on labs.
+
 
     [:octicons-arrow-right-24: Profession and Education](about/)
+
+-   :material-certificate:{ .lg .middle } __Certifications__
+
+    ---
+
+    CISSP — Certified Information Systems Security Professional (ISC2)
+
+    [:octicons-arrow-right-24: View certifications](certifications/)
 
 -   :material-server-network:{ .lg .middle } __Homelab__
 
     ---
-   Details on my homelab services and cybersecurity training environments. 
+   Details on my homelab services and cybersecurity training environments.
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
