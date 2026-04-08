@@ -15,6 +15,7 @@ nav:
       - Internal PKI: homelab/pki.md
       - AD Pentest Lab: homelab/activedirectory.md
       - Web App Security Lab: homelab/webapplab.md
+      - Service Lifecycle: homelab/service-lifecycle.md
 
 theme:
   name: material
