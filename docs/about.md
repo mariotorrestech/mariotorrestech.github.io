@@ -4,7 +4,7 @@ title: About
 
 # Professional Overview:
 
-**CISSP-certified IT professional with 5 years of experience supporting identity and access management in a highly regulated financial environment, serving 70,000 users across enterprise platforms and business units.**
+**CISSP-certified IT professional with 5 years of enterprise operations experience in a regulated financial environment, supporting 70,000 users across identity, access, and security platforms. Builds and maintains infrastructure hands-on through a personal homelab running containerized services on Proxmox.**
 
 ## Education
 
@@ -24,7 +24,7 @@ December 2020 - Present
 - Document resolution patterns in ServiceNow and JIRA to improve triage workflows and build institutional knowledge
 - Train and onboard new hires on access workflows, identity verification, and compliance procedures
 
-Also building hands-on security skills through a personal [homelab](homelab/index.md) running Proxmox, Pi-hole, internal PKI, and security labs.
+Also building infrastructure and platform skills through a personal [homelab](homelab/index.md) running Proxmox, containerized services, DNS, reverse proxy, monitoring, and security labs.
 
 ## Let's Connect!
 

@@ -7,7 +7,7 @@ hide:
 
 # **Mario Torres**
 
-*[CISSP-certified IT professional](about/) supporting identity and access management across 70,000 users at Fidelity Investments. Hands-on security skills built through enterprise support and a personal [homelab](homelab/index.md).*
+*[CISSP-certified IT professional](about/) with 5 years of enterprise operations experience at Fidelity Investments, supporting 70,000 users across identity, access, and security platforms. Building infrastructure and automation skills through a personal [homelab](homelab/index.md).*
 
 ## Quick Navigations
 
@@ -17,7 +17,7 @@ hide:
 
     ---
 
-    5 years supporting identity and access management at Fidelity Investments. Building security skills through hands-on labs.
+    5 years of enterprise IT operations at Fidelity Investments. CISSP-certified, with hands-on infrastructure experience through a personal homelab.
 
 
     [:octicons-arrow-right-24: Profession and Education](about/)
@@ -35,7 +35,7 @@ hide:
 -   :material-server-network:{ .lg .middle } __Homelab__
 
     ---
-   Details on my homelab services and cybersecurity training environments.
+    Proxmox hypervisor running containerized services, DNS, reverse proxy, monitoring, and security labs.
 
     [:octicons-arrow-right-24: Lab details](homelab/index.md)
 
