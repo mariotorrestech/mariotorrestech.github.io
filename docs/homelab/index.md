@@ -23,6 +23,8 @@ My homelab runs on **Proxmox VE**, a bare-metal hypervisor hosted on an Intel NU
 
 The environment runs a mix of self-hosted applications including media servers, document management, and utility services. Each service follows a standardized lifecycle: provisioning, DNS registration, reverse proxy configuration, monitoring setup, and documentation. Services are decommissioned through the reverse of that process to prevent drift.
 
+Operational tasks like patching, inventory reporting, and VPN device management are handled through custom Bash tooling run from the Proxmox host.
+
 ### Docker and Containers
 
 Most services run as LXC containers directly on Proxmox. A multi-container Docker Compose stack runs on a dedicated VM with WireGuard VPN integration. NFS shares provide read-only access to other containers without duplicating data.
