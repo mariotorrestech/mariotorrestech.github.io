@@ -27,6 +27,13 @@ The environment runs a mix of self-hosted applications including media servers, 
 
 Most services run as LXC containers directly on Proxmox. A multi-container Docker Compose stack runs on a dedicated VM with WireGuard VPN integration. NFS shares provide read-only access to other containers without duplicating data.
 
+### Deployment Workflows
+
+The lab uses two separate documentation pipelines:
+
+- **Portfolio site** (this site): GitHub Actions workflow triggers on push to main, builds MkDocs, and deploys to GitHub Pages automatically.
+- **Internal docs** (docs.lab): Built locally with MkDocs and deployed via rsync to a dedicated nginx server on the homelab.
+
 ### Security Labs
 
 - **[Active Directory Lab](activedirectory.md)**: Vulnerable Windows domain for practicing penetration testing techniques
@@ -70,7 +77,7 @@ graph TD
 | **Networking** | DNS management, reverse proxy, TLS termination, VPN tunnels |
 | **Containers** | LXC provisioning, Docker Compose, NFS mounts, GPU passthrough |
 | **Monitoring** | Uptime Kuma, service health checks |
-| **CI/CD and Tooling** | Git-based workflows, MkDocs build/deploy pipeline, Bash automation |
+| **CI/CD and Tooling** | GitHub Actions, MkDocs build/deploy pipelines, Git workflows, Bash automation |
 | **Security** | Active Directory attack lab, web application testing, wildcard PKI |
 | **Remote Access** | Tailscale mesh VPN |
 
