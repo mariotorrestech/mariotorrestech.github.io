@@ -44,7 +44,9 @@ graph LR
 
 ## A gotcha worth knowing: DHCP breaks `.lab`
 
-The most common way `.lab` resolution breaks is a container left on DHCP. It picks up the router's DNS instead of Pi-hole, and `.lab` names quietly stop resolving — `getaddrinfo ENOTFOUND`, with monitoring checks, proxy lookups, and API calls all failing at once. The fix is consistent: give every container a static IP with Pi-hole as its nameserver, pinned in the container config so a reboot can't silently undo it.
+The most common way `.lab` resolution breaks is a container left on DHCP. It picks up the router's DNS instead of Pi-hole, and `.lab` names quietly stop resolving — `getaddrinfo ENOTFOUND`, with monitoring checks, proxy lookups, and API calls all failing at once.
+
+The durable fix is pinning each container's MAC and giving it a static IP with Pi-hole as its nameserver. I pinned all of them in one batch, rebooting in order of impact — Pi-hole and the proxy last, since restarting those briefly takes every service down — then checked each one came back with the right address instead of a DHCP lease.
 
 ---
 
