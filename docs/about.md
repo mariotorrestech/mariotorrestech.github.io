@@ -16,11 +16,10 @@ title: About
 
 December 2020 - Present
 
-- Support 70,000+ users across enterprise identity, access, and security platforms in a regulated financial services environment
 - Work daily across CyberArk, Azure AD/Entra, Microsoft Intune, Zscaler, BeyondTrust, Delinea EPM, and Broadcom Top Secret (mainframe IAM)
+- Support 70,000+ users across enterprise identity, access, and security platforms in a regulated financial services environment
+- Coordinate incident remediation during security events — access revocation, restoration, and account verification
 - Investigate access and authentication issues using Splunk dashboards, TSS MARS reports, and cross-platform troubleshooting
-- Coordinate incident remediation including access revocation, restoration, and account verification during security events
-- Maintain 98% contact compliance score while managing high-volume support across multiple business units
 - Document resolution patterns in ServiceNow and JIRA to improve triage workflows and build institutional knowledge
 - Train and onboard new hires on access workflows, identity verification, and compliance procedures
 
