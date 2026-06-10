@@ -5,7 +5,10 @@ title: Certifications
 ## CISSP — Certified Information Systems Security Professional
 
 <div style="text-align: center; margin: 1em 0;">
-<div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="916e894d-6cc0-4cf0-a0ce-baf325a5b712" data-share-badge-host="https://www.credly.com" style="display: inline-block;"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<a href="https://www.credly.com/badges/916e894d-6cc0-4cf0-a0ce-baf325a5b712" target="_blank" rel="noopener">
+<img src="../assets/cissp-badge.png" alt="CISSP — Certified Information Systems Security Professional badge" width="200">
+</a>
+<p><a href="https://www.credly.com/badges/916e894d-6cc0-4cf0-a0ce-baf325a5b712" target="_blank" rel="noopener">Verify on Credly</a></p>
 </div>
 
 ### Why CISSP

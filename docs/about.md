@@ -2,7 +2,7 @@
 title: About
 ---
 
-# Professional Overview:
+# Professional Overview
 
 **CISSP-certified IT professional with 5 years of enterprise operations experience in a regulated financial environment, supporting 70,000 users across identity, access, and security platforms. Builds and maintains infrastructure hands-on through a personal homelab running containerized services on Proxmox.**
 

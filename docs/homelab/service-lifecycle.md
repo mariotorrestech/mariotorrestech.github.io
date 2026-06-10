@@ -18,7 +18,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/Proxmo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/<script>.sh)"
 ```
 
-Verify the service is running by accessing it directly via IP and port before moving on.
+Scripts are reviewed before execution rather than piped blindly — an acceptable tradeoff for a non-production lab, and a habit worth keeping regardless. Verify the service is running by accessing it directly via IP and port before moving on.
 
 ### 2. DNS
 
@@ -53,7 +53,7 @@ The result: every service is accessed via `https://servicename.lab` with a trust
 
 ### 4. Monitoring
 
-Every web-accessible service gets an Uptime Kuma monitor. If it goes down, I know about it before I notice.
+Every web-accessible service gets an Uptime Kuma monitor. If it goes down, I find out from the dashboard before I'd stumble into it.
 
 - Type: HTTP(s)
 - URL: `https://servicename.lab`

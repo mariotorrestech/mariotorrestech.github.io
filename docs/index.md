@@ -1,5 +1,5 @@
 ---
-title: Mario Torres - IT Professional
+title: Mario Torres - Identity & Security
 hide:
   - toc
   - navigation
@@ -7,9 +7,9 @@ hide:
 
 # **Mario Torres**
 
-*[CISSP-certified IT professional](about/) with 5 years of enterprise operations experience at Fidelity Investments, supporting 70,000 users across identity, access, and security platforms. Building infrastructure and automation skills through a personal [homelab](homelab/index.md).*
+*[CISSP-certified identity and security professional](about/) with 5 years of enterprise operations experience at Fidelity Investments, supporting 70,000 users across identity, access, and security platforms. Building infrastructure and automation skills through a personal [homelab](homelab/index.md).*
 
-## Quick Navigations
+## Quick Navigation
 
 <div class="grid cards" markdown>
 
@@ -30,7 +30,7 @@ hide:
 
     [:octicons-arrow-right-24: View certifications](certifications/)
 
-    ![CISSP Badge](assets/certified-information-systems-security-professional-cissp.png){ width="80" }
+    ![CISSP Badge](assets/cissp-badge.png){ width="80" }
 
 -   :material-server-network:{ .lg .middle } __Homelab__
 

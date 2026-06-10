@@ -13,8 +13,8 @@ nav:
       - Pi-hole DNS: homelab/pihole.md
       - Nginx Proxy Manager: homelab/npm.md
       - Internal PKI: homelab/pki.md
-      - AD Pentest Lab: homelab/activedirectory.md
-      - Web App Security Lab: homelab/webapplab.md
+      - Remote Access: homelab/remote-access.md
+      - Security Labs: homelab/security-labs.md
       - Service Lifecycle: homelab/service-lifecycle.md
 
 theme:
@@ -82,3 +82,6 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin-in
       link: https://www.linkedin.com/in/tmario/
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/mariotorrestech

@@ -17,7 +17,7 @@ My homelab runs on **Proxmox VE**, a bare-metal hypervisor hosted on an Intel NU
 - **Monitoring**: Uptime Kuma tracks service availability with HTTP health checks across all web-accessible services.
 - **Version Control**: Self-hosted Gitea instance for configuration and documentation repositories.
 - **Documentation**: Internal MkDocs site built locally and deployed via rsync to a dedicated nginx server. Covers runbooks, service procedures, and network topology.
-- **Remote Access**: Tailscale mesh VPN for secure access to select services from outside the local network.
+- **[Remote Access](remote-access.md)**: Tailscale mesh VPN for reaching select services from outside the LAN — no ports exposed to the internet.
 
 ### Service Management
 
@@ -38,8 +38,7 @@ The lab uses two separate documentation pipelines:
 
 ### Security Labs
 
-- **[Active Directory Lab](activedirectory.md)**: Vulnerable Windows domain for practicing penetration testing techniques
-- **[Web Application Lab](webapplab.md)**: OWASP Juice Shop for web security testing
+- **[Security Labs](security-labs.md)**: Decommissioned PEH coursework — a vulnerable Active Directory domain and an OWASP Juice Shop web app
 
 ## Architecture
 
@@ -82,6 +81,13 @@ graph TD
 | **CI/CD and Tooling** | GitHub Actions, MkDocs build/deploy pipelines, Git workflows, Bash automation |
 | **Security** | Active Directory attack lab, web application testing, wildcard PKI |
 | **Remote Access** | Tailscale mesh VPN |
+
+## Where this is heading
+
+The lab is a moving target. Two concrete next steps on the list:
+
+- **Proper backups and disaster recovery** — scheduled, tested backups of container/VM state and service data, so a failed host or a bad change is a restore, not a rebuild. Right now this is the biggest gap between "homelab" and "production-minded."
+- **Remote `.lab` DNS over Tailscale** — point Tailscale's DNS at [Pi-hole](pihole.md) (split DNS) so `service.lab` names resolve over the VPN, not just on the LAN. Today remote access means connecting by Tailscale IP; this closes that gap so off-network access feels identical to being home.
 
 ---
 

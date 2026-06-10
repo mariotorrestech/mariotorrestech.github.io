@@ -4,47 +4,35 @@ title: Internal PKI
 
 # Internal PKI (Certificate Management)
 
-## Overview
+## Why a local CA
 
-The homelab uses locally-trusted certificates for HTTPS across all internal services. This provides browser-trusted TLS without relying on public certificate authorities for internal-only domains.
+I wanted lab services to load as `https://service.lab` with no browser warnings — to feel like real websites instead of "your connection is not private" click-throughs. That means each [reverse proxy](npm.md) host needs a TLS certificate to terminate HTTPS.
 
-## What I Built
+The catch: `.lab` is an internal-only domain. No public certificate authority — Let's Encrypt included — will issue a certificate for a name it can't validate on the public internet. So the certificate has to come from a CA I run myself, one my devices are told to trust.
 
-- **Local Certificate Authority**: Trusted CA installed in client trust stores
-- **Wildcard certificate**: Single `*.lab` cert covers all internal services
-- **TLS termination**: Certificates loaded into Nginx Proxy Manager for centralized SSL handling
+## How it's set up
 
-## Architecture
+I used **[mkcert](https://github.com/FiloSottile/mkcert)** on my MacBook. mkcert does two things:
+
+1. Creates a local certificate authority and installs its root into the machine's trust store (the macOS keychain), so the browser trusts anything that CA signs.
+2. Issues certificates signed by that CA.
+
+I generated a single **wildcard `*.lab` certificate** — valid for every `service.lab` hostname — and uploaded the cert and key into Nginx Proxy Manager. NPM presents it on every proxy host and terminates TLS there; the backends still speak plain HTTP internally.
 
 ```mermaid
 graph LR
-    CA[Local CA] -->|Signs| CERT["*.lab Wildcard Cert"]
-    CERT -->|Uploaded to| NPM[Nginx Proxy Manager]
-    NPM -->|Terminates TLS| SERVICES[Internal Services]
+    CA[mkcert local CA<br/>root in macOS keychain] -->|signs| CERT["*.lab wildcard cert"]
+    CERT -->|uploaded to| NPM[Nginx Proxy Manager]
+    NPM -->|terminates TLS| SERVICES[Internal Services]
 
-    CA -->|Trusted by| CLIENTS[Client Devices]
+    CA -->|trusted by| MAC[MacBook]
 ```
 
-## How It Works
+## Decisions and trade-offs
 
-1. Local CA created and installed in client trust stores (macOS Keychain, browsers)
-2. Wildcard certificate generated for `*.lab` domain
-3. Certificate uploaded to Nginx Proxy Manager
-4. NPM terminates SSL; backends run on HTTP internally
-5. Clients trust the connection via the installed CA root
-
-## Key Decisions
-
-- **Simplicity over automation**: Manual cert issuance sufficient for small service count
-- **Wildcard approach**: One certificate covers all services, reducing management overhead
-- **Client trust distribution**: CA root manually installed on devices that need access
-
-## Skills Demonstrated
-
-- PKI hierarchy design (root CA, leaf certificates)
-- Certificate lifecycle management
-- TLS termination architecture
-- Trust distribution across clients
+- **One wildcard over per-service certs.** A single `*.lab` cert covers every current and future service, so adding a service never means issuing a new certificate — NPM just serves the existing one on the new hostname.
+- **Trust is per-device, and that's the cost.** mkcert installed the CA root on my MacBook automatically — the one machine I use to reach the lab — so everything Just Works there. The trade-off: any *other* device would show certificate warnings until I install the same CA root on it. For a single-user lab that's an acceptable limitation; if I needed multi-device trust regularly, I'd distribute the root or move to a real domain with public ACME certificates.
+- **mkcert over a full CA stack.** Standing up step-ca or a hand-rolled OpenSSL CA would be more "enterprise," but for a handful of internal services mkcert delivers the same browser-trusted result with far less to maintain.
 
 ---
 
