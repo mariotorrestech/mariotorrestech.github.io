@@ -23,7 +23,7 @@ The fix was to stop pointing DNS at the services and point it at **one place** i
 !!! note "The decision: DNS points at the proxy, not the service"
     This is the single change that made everything else clean. If the proxy moves, one IP changes — not every DNS record. If a backend moves, only the proxy's forward target changes — DNS doesn't move at all. The same principle drives the [service lifecycle](service-lifecycle.md): no service gets a DNS record pointing anywhere but the proxy.
 
-I kept this Pi-hole + NPM pairing rather than reaching for something like Caddy or Traefik. Pi-hole was already handling DNS for the whole network, so layering another DNS-aware router on top would have been redundant — the two tools split the job cleanly: Pi-hole resolves names, NPM routes and encrypts.
+I kept this Pi-hole + NPM pairing rather than reaching for something like Caddy or Traefik. Those are reverse proxies in the same vein as NPM, so adding one would just duplicate the job NPM already does — Pi-hole resolves names, NPM routes and encrypts, and the two split the work cleanly.
 
 ## Architecture
 

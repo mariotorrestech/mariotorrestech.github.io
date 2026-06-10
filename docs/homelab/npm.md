@@ -15,7 +15,7 @@ Nginx Proxy Manager solved both. Every `.lab` hostname points at NPM (see [Pi-ho
 
 `myhome.lab:8001` became `https://myhome.lab`, and the same pattern scaled to every service after it.
 
-I stayed with NPM rather than reaching for Caddy or Traefik. Pi-hole was already handling DNS for the network, and NPM's web UI made per-host setup quick without hand-writing nginx config files — the two tools split DNS and ingress cleanly without overlapping.
+I stayed with NPM rather than reaching for Caddy or Traefik. Pi-hole was already handling DNS for the network, and NPM's web UI made per-host setup quick without hand-writing nginx config files — the two tools split DNS and incoming traffic cleanly without overlapping.
 
 ## Architecture
 
