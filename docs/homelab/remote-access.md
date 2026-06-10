@@ -10,7 +10,9 @@ Some services need to be reachable when I'm away from home — but I didn't want
 
 ## How it works today
 
-Remote access is opt-in per service. The services that need it run the Tailscale client directly and join the tailnet; from outside the house I reach them at their `100.x` tailnet address. No port forwarding, no public exposure — if a service isn't on the tailnet, it simply isn't reachable from outside the LAN.
+Tailscale runs on the Proxmox host itself, which puts the whole lab one hop from my tailnet, plus a few specific containers that need their own tailnet presence. Those containers get Tailscale through a TUN device passed in from the host (see below); I reach them from anywhere at their `100.x` tailnet address. Nothing is exposed to the public internet and no ports are forwarded on the router — if something isn't on the tailnet, it isn't reachable off-LAN.
+
+Early on I ran the Tailscale client in every container that might need remote access. That wasted memory — `tailscaled` idles around 80 MB, which adds up across a dozen containers on a single NUC. I consolidated onto the host plus the short list of containers that genuinely need their own address, and removed it everywhere else.
 
 ## The hard part: Tailscale inside LXC containers
 
@@ -20,7 +22,7 @@ The fix is to enable the TUN device for the container on the Proxmox host **befo
 
 ```bash
 # On the Proxmox host — enable TUN for the container
-./tools/enable-tun.sh <VMID>
+./tools/manage-tun.sh enable <VMID>
 
 # Inside the container — install, enable, and authenticate
 curl -fsSL https://tailscale.com/install.sh | sh

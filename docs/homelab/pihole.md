@@ -42,6 +42,10 @@ graph LR
 - **Default blocklists.** The out-of-the-box lists catch the bulk of ads and telemetry without tuning — I haven't needed to add custom lists.
 - **Whitelisting when a block breaks something.** Occasionally a default list is too aggressive. The *Wall Street Journal* comment section, for example, wouldn't load until I whitelisted the domain it depended on. Pi-hole's query log makes it straightforward to spot which blocked domain caused the breakage and whitelist just that one.
 
+## A gotcha worth knowing: DHCP breaks `.lab`
+
+The most common way `.lab` resolution breaks is a container left on DHCP. It picks up the router's DNS instead of Pi-hole, and `.lab` names quietly stop resolving — `getaddrinfo ENOTFOUND`, with monitoring checks, proxy lookups, and API calls all failing at once. The fix is consistent: give every container a static IP with Pi-hole as its nameserver, pinned in the container config so a reboot can't silently undo it.
+
 ---
 
 _Return to [Homelab Overview](index.md)_

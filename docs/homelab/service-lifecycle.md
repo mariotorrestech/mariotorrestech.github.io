@@ -65,7 +65,7 @@ If the service needs to be reachable outside the local network, it gets added to
 
 ```bash
 # Enable TUN device for an LXC container
-./tools/enable-tun.sh <VMID>
+./tools/manage-tun.sh enable <VMID>
 
 # Install and authenticate inside the container
 curl -fsSL https://tailscale.com/install.sh | sh

@@ -46,9 +46,18 @@ Each service gets a proxy host in NPM with:
 - **Block Common Exploits** enabled
 - **Websockets Support** where the service needs it
 
-## Websockets: the Proxmox console
+## Per-service quirks
 
-Most services proxy fine with the defaults. The one that didn't was the **Proxmox web UI** — its built-in shell and VM/console viewer run over websockets, and without the "Websockets Support" toggle the console loads but the terminal never connects. Enabling it fixed it, and it's now a default thing I check for any service with a live or interactive UI element.
+Most services proxy cleanly with those defaults, but a couple needed per-host tweaks in NPM's **Advanced** tab:
+
+- **HTTPS-only backends fail upstream TLS verification.** Most backends speak plain HTTP, but a few only serve HTTPS with their own self-signed certs (the Proxmox UI on `:8006`, for instance). NPM won't proxy to an untrusted upstream by default, so those hosts need `proxy_ssl_verify off;`. The trust boundary that matters is already the wildcard cert at the front door — verifying the internal hop to a box I control adds nothing.
+- **Pi-hole's dashboard lives at `/admin`.** Hitting `https://pihole.lab/` returns a 403, because Pi-hole serves its UI from `/admin`, not `/`. A one-line redirect on the proxy host fixes it:
+
+    ```nginx
+    location = / { return 301 /admin; }
+    ```
+
+Real-time UIs also need the **Websockets Support** toggle, which is part of the per-host checklist above.
 
 ---
 
